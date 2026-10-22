@@ -1,0 +1,3 @@
+Validation/development data: Small SR, von Fritsch L, Doherty A, Khalid S, Price A (2022). OxWalk. DOI10.5287/bodleian:ORQ2abnbR. CC BY4.0. https://ora.ox.ac.uk/objects/uuid:19d3cb34-e2b3-4177-91b6-1bad0e0163e7
+Raw participant data are not redistributed in this delivery.
+Event detection: mobgap1.2.0 IcdShinImproved; Apache2.0. See packaged license and upstream references.

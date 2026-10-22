@@ -1,0 +1,1477 @@
+{
+  "schema": "imu.activity.model.v1",
+  "model_version": "stable-bags-sb1-v1/FINAL",
+  "architecture": "locomotion_posture_ensemble",
+  "input_channels": 8,
+  "class_count": 4,
+  "member_count": 64,
+  "members": [
+    {
+      "model_id": "native-dense-nd1-v1/ECT-seed20261018",
+      "architecture": "small_tcn",
+      "network_arm": "E",
+      "parameter_count": 144644,
+      "training_weight_sha256": "b8c4c7e47f6472a35568008a1e46d1cbf6fbc4935d21d473e3d3ea7ff6ed2735"
+    },
+    {
+      "model_id": "native-dense-nd1-v1/EDT-seed20261018",
+      "architecture": "small_tcn",
+      "network_arm": "E",
+      "parameter_count": 144644,
+      "training_weight_sha256": "67b47f2673806a02bd21bab27c8467ffc6ed137e183b94220ae0fce2d22f5d60"
+    },
+    {
+      "model_id": "native-dense-nd1-v1/NCT-seed20261018",
+      "architecture": "small_tcn",
+      "network_arm": "E",
+      "parameter_count": 144644,
+      "training_weight_sha256": "c52da3f26f4afdd9b70049eafea1d39eb57e8db1f5b1b444bfb307af4adccef9"
+    },
+    {
+      "model_id": "native-dense-nd1-v1/NDT-seed20261018",
+      "architecture": "small_tcn",
+      "network_arm": "E",
+      "parameter_count": 144644,
+      "training_weight_sha256": "2e204cd46fe82d00ca280323f39fdf73bf0bf2e956f8ae305379f5b8b6d5f947"
+    },
+    {
+      "model_id": "native-dense-nd1-v1/ECG-seed20261018",
+      "architecture": "conv_bigru",
+      "network_arm": "G",
+      "parameter_count": 189188,
+      "training_weight_sha256": "9aa7e4e3844a4bf5b636cbf08050997441597daa66ec81277305f4cffadf7acf"
+    },
+    {
+      "model_id": "native-dense-nd1-v1/EDG-seed20261018",
+      "architecture": "conv_bigru",
+      "network_arm": "G",
+      "parameter_count": 189188,
+      "training_weight_sha256": "5f270ddec1d3e05d8baa7ec4b6e73b7cbfe8e13830509e400cf21026a46d1ae3"
+    },
+    {
+      "model_id": "native-dense-nd1-v1/NCG-seed20261018",
+      "architecture": "conv_bigru",
+      "network_arm": "G",
+      "parameter_count": 189188,
+      "training_weight_sha256": "dddbf8e6dc4f4afc167cc2be4dbb22a35ffda1f8ae3630eb131335f41b59135a"
+    },
+    {
+      "model_id": "native-dense-nd1-v1/NDG-seed20261018",
+      "architecture": "conv_bigru",
+      "network_arm": "G",
+      "parameter_count": 189188,
+      "training_weight_sha256": "c06655ab5e4a0ca3b375f96062eefd722a8cd4720de7a3f13068e2dcdfb8fa0a"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/L-seed20261024",
+      "architecture": "small_tcn",
+      "network_arm": "E",
+      "parameter_count": 144644,
+      "training_weight_sha256": "1d53b63768d5d1267ccdefa6b719d9f018705824418c24b7d44896121a161224"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/G-seed20261024",
+      "architecture": "conv_bigru",
+      "network_arm": "G",
+      "parameter_count": 189188,
+      "training_weight_sha256": "9b238304cd3aebcdfd653bca665f55c536be038c0b9eedc395e183ae12f35fe2"
+    },
+    {
+      "model_id": "native-dense-nd1-v1/ECT-seed20261019",
+      "architecture": "small_tcn",
+      "network_arm": "E",
+      "parameter_count": 144644,
+      "training_weight_sha256": "cfee64d95aa3b8b77e9113dccef335072efc48b6464c4682a3dee9b0da7ec48c"
+    },
+    {
+      "model_id": "native-dense-nd1-v1/EDT-seed20261019",
+      "architecture": "small_tcn",
+      "network_arm": "E",
+      "parameter_count": 144644,
+      "training_weight_sha256": "dedbefa8819e0db8273b7a2f8a3689d5efbc4832d3bc84a53a6e37522ffc8638"
+    },
+    {
+      "model_id": "native-dense-nd1-v1/NCT-seed20261019",
+      "architecture": "small_tcn",
+      "network_arm": "E",
+      "parameter_count": 144644,
+      "training_weight_sha256": "59a6667eaa8dcb135e87023cf70275678808bf45852b6e3c8395ddd4554451ac"
+    },
+    {
+      "model_id": "native-dense-nd1-v1/NDT-seed20261019",
+      "architecture": "small_tcn",
+      "network_arm": "E",
+      "parameter_count": 144644,
+      "training_weight_sha256": "0026d3af97c79deb3816a42c3573bd185918feab446722e5822c0f14fa773bc4"
+    },
+    {
+      "model_id": "native-dense-nd1-v1/ECG-seed20261019",
+      "architecture": "conv_bigru",
+      "network_arm": "G",
+      "parameter_count": 189188,
+      "training_weight_sha256": "aa06e0ea5cc2c44c623e85819269245aa5a1c3686cea41c2d68d913b9fb18fc7"
+    },
+    {
+      "model_id": "native-dense-nd1-v1/EDG-seed20261019",
+      "architecture": "conv_bigru",
+      "network_arm": "G",
+      "parameter_count": 189188,
+      "training_weight_sha256": "14ad98eada9b2de465d505e402a638c746a59b334f8f86595cf592b0bb5525e2"
+    },
+    {
+      "model_id": "native-dense-nd1-v1/NCG-seed20261019",
+      "architecture": "conv_bigru",
+      "network_arm": "G",
+      "parameter_count": 189188,
+      "training_weight_sha256": "80ece2ac38f266e7985e326cb6a8abc5382c4be86f3379147acb6cbb2635343c"
+    },
+    {
+      "model_id": "native-dense-nd1-v1/NDG-seed20261019",
+      "architecture": "conv_bigru",
+      "network_arm": "G",
+      "parameter_count": 189188,
+      "training_weight_sha256": "c7bfe98a4884bf086c72b8928d66a783c5aa9dc98b2c1108debb268d8c617e2c"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/L-seed20261025",
+      "architecture": "small_tcn",
+      "network_arm": "E",
+      "parameter_count": 144644,
+      "training_weight_sha256": "d9715f6050ff0a46fb4fe21a9ef14afea979f6bc1ad32f847fe25bb9936fe8c8"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/G-seed20261025",
+      "architecture": "conv_bigru",
+      "network_arm": "G",
+      "parameter_count": 189188,
+      "training_weight_sha256": "6e4e6220777779539ab2c75476a695a803a10a91a8c95b22bf534f21ddb9b863"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/L-seed20261026",
+      "architecture": "small_tcn",
+      "network_arm": "E",
+      "parameter_count": 144644,
+      "training_weight_sha256": "db91ed618ede04afd8eae3dd12856e192995144335e278bc95b099bd8e7ec4c1"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/G-seed20261026",
+      "architecture": "conv_bigru",
+      "network_arm": "G",
+      "parameter_count": 189188,
+      "training_weight_sha256": "dc88339827dcfbe630de34ad1406a93220e289bbcf24197f0f9affb3f41308d8"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/L-seed20261027",
+      "architecture": "small_tcn",
+      "network_arm": "E",
+      "parameter_count": 144644,
+      "training_weight_sha256": "a4e8c313dbc559fad6d0e0b77c48ef6256b44c6ea8432ef68afde6de1ef56b7e"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/G-seed20261027",
+      "architecture": "conv_bigru",
+      "network_arm": "G",
+      "parameter_count": 189188,
+      "training_weight_sha256": "70ec01eddcca22d72f3041f1c66ddded87dff51341f8c80804a834d4b3b3a498"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/L-seed20261028",
+      "architecture": "small_tcn",
+      "network_arm": "E",
+      "parameter_count": 144644,
+      "training_weight_sha256": "fdd9b6f736c7d3cd17ed9cbe500a6d3ea347d2f477137f1611891407d01ac2cd"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/G-seed20261028",
+      "architecture": "conv_bigru",
+      "network_arm": "G",
+      "parameter_count": 189188,
+      "training_weight_sha256": "b03f17ba5600f49e3ca4f70afee4cd14642d8719736cc6a7eedf7c9f1205a7da"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/L-seed20261029",
+      "architecture": "small_tcn",
+      "network_arm": "E",
+      "parameter_count": 144644,
+      "training_weight_sha256": "8286d959e39fe5e766736072a885342ee7b45debc5affb0e1f0635e60588947c"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/G-seed20261029",
+      "architecture": "conv_bigru",
+      "network_arm": "G",
+      "parameter_count": 189188,
+      "training_weight_sha256": "fabe7bdf4cff6bfe7888ec7cec08a34db5a1910789aed1a20e6c164d6fff821c"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/L-seed20261030",
+      "architecture": "small_tcn",
+      "network_arm": "E",
+      "parameter_count": 144644,
+      "training_weight_sha256": "9b56e03bd214a8dbda0fe9c27844454e0406b40045728f0e11e9f6edff9bbbde"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/G-seed20261030",
+      "architecture": "conv_bigru",
+      "network_arm": "G",
+      "parameter_count": 189188,
+      "training_weight_sha256": "99f0ddf099a3742d4d96dae6c2e03e3e3e00b2c10b8b145d13f1582d31426a6b"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/L-seed20261031",
+      "architecture": "small_tcn",
+      "network_arm": "E",
+      "parameter_count": 144644,
+      "training_weight_sha256": "fa1fd448a561666609b7f3d88e323d387982ce43bddb819b7b07649760adaee0"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/G-seed20261031",
+      "architecture": "conv_bigru",
+      "network_arm": "G",
+      "parameter_count": 189188,
+      "training_weight_sha256": "14ce118c562926f458be5b05ed1f53fea60411b81011d60ea819ccf0d0988124"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/L-seed20261032",
+      "architecture": "small_tcn",
+      "network_arm": "E",
+      "parameter_count": 144644,
+      "training_weight_sha256": "b6459be90141f2d855a028245111a0344d74df384d3220d1a96067241cc6909d"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/G-seed20261032",
+      "architecture": "conv_bigru",
+      "network_arm": "G",
+      "parameter_count": 189188,
+      "training_weight_sha256": "2151c77fe78cd0547aa6176070d89e160aafb51a8c6873dd265fb49e187ba5c9"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/L-seed20261033",
+      "architecture": "small_tcn",
+      "network_arm": "E",
+      "parameter_count": 144644,
+      "training_weight_sha256": "c06c45b2cfdf46064ddc189dd194f7424e3ea13ee533a941771a5fd48a28cf32"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/G-seed20261033",
+      "architecture": "conv_bigru",
+      "network_arm": "G",
+      "parameter_count": 189188,
+      "training_weight_sha256": "b82c5f5d2ca159d355a5eaf76a11a8bf9db7a3d9bae03b2f63c284228fc51f09"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/L-seed20261034",
+      "architecture": "small_tcn",
+      "network_arm": "E",
+      "parameter_count": 144644,
+      "training_weight_sha256": "5ec56eb026faab6dd3c6f5b10997e82a12b2da7b23e687ee2cd07a8571520350"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/G-seed20261034",
+      "architecture": "conv_bigru",
+      "network_arm": "G",
+      "parameter_count": 189188,
+      "training_weight_sha256": "89e074851a5016d308affe8784a73c8f8dfe11a17f7497c847ffacdf6031b2b6"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/L-seed20261035",
+      "architecture": "small_tcn",
+      "network_arm": "E",
+      "parameter_count": 144644,
+      "training_weight_sha256": "aa22539ed851a886bc1d699b6e08a7a4b0b173bb53e95086c2feb4c3c9e4a64c"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/G-seed20261035",
+      "architecture": "conv_bigru",
+      "network_arm": "G",
+      "parameter_count": 189188,
+      "training_weight_sha256": "42914fc8441c874b1d4c5073cbb26cd46b1a6d90ea3bc5b555e4966f12e83f3d"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/L-seed20261036",
+      "architecture": "small_tcn",
+      "network_arm": "E",
+      "parameter_count": 144644,
+      "training_weight_sha256": "be1e37a81e729de51cf4039e38856f744da3f58ded9e7bb56070b87dbfe6f156"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/G-seed20261036",
+      "architecture": "conv_bigru",
+      "network_arm": "G",
+      "parameter_count": 189188,
+      "training_weight_sha256": "62c2c473855a0e9133b4ba53d8676e6544846a9cfed32351a0408ea4b539b2a2"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/L-seed20261037",
+      "architecture": "small_tcn",
+      "network_arm": "E",
+      "parameter_count": 144644,
+      "training_weight_sha256": "c4625294e274361c9614df24925e34e2a8bc996ac281875eabdad1438777034c"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/G-seed20261037",
+      "architecture": "conv_bigru",
+      "network_arm": "G",
+      "parameter_count": 189188,
+      "training_weight_sha256": "97dbe9a544a6a1225c91e8ab673256e42810d71d7d850fcd5b8034cff68cc5d0"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/L-seed20261038",
+      "architecture": "small_tcn",
+      "network_arm": "E",
+      "parameter_count": 144644,
+      "training_weight_sha256": "3b1557e44bbdcf653ecc49dbc58a29b47e1e9d2c40db33cd925ac23f92d91814"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/G-seed20261038",
+      "architecture": "conv_bigru",
+      "network_arm": "G",
+      "parameter_count": 189188,
+      "training_weight_sha256": "4598c0a86659f5f5e4bd711989674f0c0fec2551de90c1d6c894ae224476d307"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/L-seed20261039",
+      "architecture": "small_tcn",
+      "network_arm": "E",
+      "parameter_count": 144644,
+      "training_weight_sha256": "49c90fedfda43a11f0a3dbb59acb945e2b6324d65b07e782a9e0e24e0294d02a"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/G-seed20261039",
+      "architecture": "conv_bigru",
+      "network_arm": "G",
+      "parameter_count": 189188,
+      "training_weight_sha256": "536a3471b79b54e0140aca93c43f72d381307f0fb6380a9e90ee318d3240b73c"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/L-seed20261040",
+      "architecture": "small_tcn",
+      "network_arm": "E",
+      "parameter_count": 144644,
+      "training_weight_sha256": "229ae6614b1568870784aa84f2ab9f23387131aac57c8a115b175f8978033865"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/G-seed20261040",
+      "architecture": "conv_bigru",
+      "network_arm": "G",
+      "parameter_count": 189188,
+      "training_weight_sha256": "4d25de99ef0d587a7a711be6f2417ede54b3773a2a5f16b39d6b2d37861fdb26"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/L-seed20261041",
+      "architecture": "small_tcn",
+      "network_arm": "E",
+      "parameter_count": 144644,
+      "training_weight_sha256": "70e992fd5aea60efbe9deceaeb3c87d4163ad375e6af8f302ab1bf0a7d328638"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/G-seed20261041",
+      "architecture": "conv_bigru",
+      "network_arm": "G",
+      "parameter_count": 189188,
+      "training_weight_sha256": "7b33a633005b56813792e1d0708e6e0c21dc1321491ed459407eb422fde7687c"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/L-seed20261042",
+      "architecture": "small_tcn",
+      "network_arm": "E",
+      "parameter_count": 144644,
+      "training_weight_sha256": "62b67b48bd79c21bc7079f94eebefcbce8d916a8e30198f79515e23f3d148a85"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/G-seed20261042",
+      "architecture": "conv_bigru",
+      "network_arm": "G",
+      "parameter_count": 189188,
+      "training_weight_sha256": "315a1d2612a39901f067725e9d7e2b2c58cdc928a49d9c5a4018660ff3e1cee5"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/L-seed20261043",
+      "architecture": "small_tcn",
+      "network_arm": "E",
+      "parameter_count": 144644,
+      "training_weight_sha256": "98d65bab676b65a437a41ce2a4a56c9aec8b0f03d9eb253ee94765b79e33352b"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/G-seed20261043",
+      "architecture": "conv_bigru",
+      "network_arm": "G",
+      "parameter_count": 189188,
+      "training_weight_sha256": "0b61c2159f554ca64db165fc40d8c8d9d3555c53cad64543237063db8e1a7c8c"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/L-seed20261044",
+      "architecture": "small_tcn",
+      "network_arm": "E",
+      "parameter_count": 144644,
+      "training_weight_sha256": "f0cd01f04565931ac3121afc824a280f6143c6b5efd98dda9312de3b7d14c117"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/G-seed20261044",
+      "architecture": "conv_bigru",
+      "network_arm": "G",
+      "parameter_count": 189188,
+      "training_weight_sha256": "f611051178d4a43519e3b1da2e104266bfc5e6682fe83f1b85d151cdd784bfcd"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/L-seed20261045",
+      "architecture": "small_tcn",
+      "network_arm": "E",
+      "parameter_count": 144644,
+      "training_weight_sha256": "a731dbb2c1a65fbf30b41dd83e5a06a0ddd860dd97c49a839dfe8aba526a209a"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/G-seed20261045",
+      "architecture": "conv_bigru",
+      "network_arm": "G",
+      "parameter_count": 189188,
+      "training_weight_sha256": "c9fb5432f44b7e50dd084f5548c145552d2be18a8a829d2258dd0e1485a4d0fd"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/L-seed20261046",
+      "architecture": "small_tcn",
+      "network_arm": "E",
+      "parameter_count": 144644,
+      "training_weight_sha256": "3778fec9c7772b89ad4c54ecb4babab5afae5e9897809102fcf100da6c088d39"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/G-seed20261046",
+      "architecture": "conv_bigru",
+      "network_arm": "G",
+      "parameter_count": 189188,
+      "training_weight_sha256": "7dac7ecaf026b07a0eaefb3e8007a85b9538921071626c570f213214fbab988d"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/L-seed20261047",
+      "architecture": "small_tcn",
+      "network_arm": "E",
+      "parameter_count": 144644,
+      "training_weight_sha256": "a7bb2fc9f16a9aab8b18b27f69e05ed4e334e949cf3c537ad8799fc66b2d3dd4"
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/G-seed20261047",
+      "architecture": "conv_bigru",
+      "network_arm": "G",
+      "parameter_count": 189188,
+      "training_weight_sha256": "8ecdd9d0cd9454b4823f919ca0a4bca9b30844afe14438990c8997ec8193a639"
+    }
+  ],
+  "binary_member_count": 24,
+  "binary_members": [
+    {
+      "model_id": "stable-bags-sb1-v1/PM-seed20261024",
+      "file": "binary-0.ubj",
+      "sha256": "dbc89bc008a1704a24072b5ce0bb543907b9c4b882a4a66305dae9e0bf379c9a",
+      "features": 70,
+      "boosting_rounds": 785,
+      "training_rows": 300000
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/PM-seed20261025",
+      "file": "binary-1.ubj",
+      "sha256": "1f6234cc4784f34bfe4fb84298e6f31b07a21f5120c4dc2b33328efb12a7ee72",
+      "features": 70,
+      "boosting_rounds": 785,
+      "training_rows": 300000
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/PM-seed20261026",
+      "file": "binary-2.ubj",
+      "sha256": "48d3e31ac3f4ea055f1e40687c2b268fbcead166f123cb549b57abe4f95fde26",
+      "features": 70,
+      "boosting_rounds": 785,
+      "training_rows": 300000
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/PM-seed20261027",
+      "file": "binary-3.ubj",
+      "sha256": "5072c9b50987e6209a962893c7318b63701c40c0a3c841711113dd0872db30a8",
+      "features": 70,
+      "boosting_rounds": 785,
+      "training_rows": 300000
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/PM-seed20261028",
+      "file": "binary-4.ubj",
+      "sha256": "96cecbc0f5c3f50c4e06c5ec437b3343e82fa8af674027c31f450d4f3ac133ab",
+      "features": 70,
+      "boosting_rounds": 785,
+      "training_rows": 300000
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/PM-seed20261029",
+      "file": "binary-5.ubj",
+      "sha256": "4f057c4538c7016a95a0e1e1158af5fa3161e060917879525e05e5c4aee4c7ae",
+      "features": 70,
+      "boosting_rounds": 785,
+      "training_rows": 300000
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/PM-seed20261030",
+      "file": "binary-6.ubj",
+      "sha256": "7e072cc00dbfe13465fdbb3db00e043d236739dd8985721163113fb46dfb5428",
+      "features": 70,
+      "boosting_rounds": 785,
+      "training_rows": 300000
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/PM-seed20261031",
+      "file": "binary-7.ubj",
+      "sha256": "102101ea1bb3e68b08bf72db12d80b6c0ba618f7c9abc4dd3cc1a886fa415a90",
+      "features": 70,
+      "boosting_rounds": 785,
+      "training_rows": 300000
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/PM-seed20261032",
+      "file": "binary-8.ubj",
+      "sha256": "54b60170eb00c47589b38121eecd13352850b056c01431e0fc2e1a93b39564d8",
+      "features": 70,
+      "boosting_rounds": 785,
+      "training_rows": 300000
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/PM-seed20261033",
+      "file": "binary-9.ubj",
+      "sha256": "9108b8fe01062ee068977f7945e3781c642e6e36a5713327d3b52ce28340c6b6",
+      "features": 70,
+      "boosting_rounds": 785,
+      "training_rows": 300000
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/PM-seed20261034",
+      "file": "binary-10.ubj",
+      "sha256": "7a5c7b10d1cf2aec143e30a9c481e10747ec292e814798daf74461ba71f8c763",
+      "features": 70,
+      "boosting_rounds": 785,
+      "training_rows": 300000
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/PM-seed20261035",
+      "file": "binary-11.ubj",
+      "sha256": "839f426063e88c7b31b9bdd083c1c7f678b9e3e69c23f74d6833e25098ddd82c",
+      "features": 70,
+      "boosting_rounds": 785,
+      "training_rows": 300000
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/PM-seed20261036",
+      "file": "binary-12.ubj",
+      "sha256": "768f3fef4bead8cbc92ee8e32cbb34380b973290acd116b79de5e30916ece231",
+      "features": 70,
+      "boosting_rounds": 785,
+      "training_rows": 300000
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/PM-seed20261037",
+      "file": "binary-13.ubj",
+      "sha256": "2436e49006bae39491e9b96a7daaba52d6c7a04c7fac6e30659bf71821c0ddf9",
+      "features": 70,
+      "boosting_rounds": 785,
+      "training_rows": 300000
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/PM-seed20261038",
+      "file": "binary-14.ubj",
+      "sha256": "53d01985737791f8ee70f45de60fb8a577245f56d5c2493e53faf6b6561e5245",
+      "features": 70,
+      "boosting_rounds": 785,
+      "training_rows": 300000
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/PM-seed20261039",
+      "file": "binary-15.ubj",
+      "sha256": "6de6e92d08fef0221027d4ce1524ca761f59c01b8e765a8b64d577cebf7eccf7",
+      "features": 70,
+      "boosting_rounds": 785,
+      "training_rows": 300000
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/PM-seed20261040",
+      "file": "binary-16.ubj",
+      "sha256": "22d4dee99ff9cf0ce9fc53c520d9343129a8af070839bb4a0ea52033d907f584",
+      "features": 70,
+      "boosting_rounds": 785,
+      "training_rows": 300000
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/PM-seed20261041",
+      "file": "binary-17.ubj",
+      "sha256": "08ed8b2a97cc049d76cbec198461eb6e91c7a273ced8b6cd76823866624dea73",
+      "features": 70,
+      "boosting_rounds": 785,
+      "training_rows": 300000
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/PM-seed20261042",
+      "file": "binary-18.ubj",
+      "sha256": "2c12820a4e9cb633d00058ab4d17f1a1b832faaba61e21400f6bf9ee7a2b1c64",
+      "features": 70,
+      "boosting_rounds": 785,
+      "training_rows": 300000
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/PM-seed20261043",
+      "file": "binary-19.ubj",
+      "sha256": "9aef5cf57c1b30eb8881f521885c95702f3c79fc273219b115b4c754d32ace52",
+      "features": 70,
+      "boosting_rounds": 785,
+      "training_rows": 300000
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/PM-seed20261044",
+      "file": "binary-20.ubj",
+      "sha256": "28e05e30da5e640e93ae870e8668d9c19c496321ef4637624763a70f8e1b709d",
+      "features": 70,
+      "boosting_rounds": 785,
+      "training_rows": 300000
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/PM-seed20261045",
+      "file": "binary-21.ubj",
+      "sha256": "c61aeaae33a59799eecc7cb15401a6ed9e12ce6418f019627bc35808c025f259",
+      "features": 70,
+      "boosting_rounds": 785,
+      "training_rows": 300000
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/PM-seed20261046",
+      "file": "binary-22.ubj",
+      "sha256": "025c3bff95c9e633ac059480b725d875cb7c1977831879dc614ca0306e5fa3c6",
+      "features": 70,
+      "boosting_rounds": 785,
+      "training_rows": 300000
+    },
+    {
+      "model_id": "stable-bags-sb1-v1/PM-seed20261047",
+      "file": "binary-23.ubj",
+      "sha256": "3b6d533cb88335f3b86a49ac0391a2d0819db7f363925e88330eed39598a1eb9",
+      "features": 70,
+      "boosting_rounds": 785,
+      "training_rows": 300000
+    }
+  ],
+  "hierarchy_recipes": [
+    {
+      "seed": 20261024,
+      "binary_seed": 20261024,
+      "posture_groups": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          8
+        ],
+        [
+          9
+        ]
+      ],
+      "binary_indices": [
+        0
+      ]
+    },
+    {
+      "seed": 20261025,
+      "binary_seed": 20261025,
+      "posture_groups": [
+        [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        [
+          18
+        ],
+        [
+          19
+        ]
+      ],
+      "binary_indices": [
+        1
+      ]
+    },
+    {
+      "seed": 20261026,
+      "binary_seed": 20261026,
+      "posture_groups": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          20
+        ],
+        [
+          21
+        ]
+      ],
+      "binary_indices": [
+        2
+      ]
+    },
+    {
+      "seed": 20261027,
+      "binary_seed": 20261027,
+      "posture_groups": [
+        [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        [
+          22
+        ],
+        [
+          23
+        ]
+      ],
+      "binary_indices": [
+        3
+      ]
+    },
+    {
+      "seed": 20261028,
+      "binary_seed": 20261028,
+      "posture_groups": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          24
+        ],
+        [
+          25
+        ]
+      ],
+      "binary_indices": [
+        4
+      ]
+    },
+    {
+      "seed": 20261029,
+      "binary_seed": 20261029,
+      "posture_groups": [
+        [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        [
+          26
+        ],
+        [
+          27
+        ]
+      ],
+      "binary_indices": [
+        5
+      ]
+    },
+    {
+      "seed": 20261030,
+      "binary_seed": 20261030,
+      "posture_groups": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          28
+        ],
+        [
+          29
+        ]
+      ],
+      "binary_indices": [
+        6
+      ]
+    },
+    {
+      "seed": 20261031,
+      "binary_seed": 20261031,
+      "posture_groups": [
+        [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        [
+          30
+        ],
+        [
+          31
+        ]
+      ],
+      "binary_indices": [
+        7
+      ]
+    },
+    {
+      "seed": 20261032,
+      "binary_seed": 20261032,
+      "posture_groups": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          32
+        ],
+        [
+          33
+        ]
+      ],
+      "binary_indices": [
+        8
+      ]
+    },
+    {
+      "seed": 20261033,
+      "binary_seed": 20261033,
+      "posture_groups": [
+        [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        [
+          34
+        ],
+        [
+          35
+        ]
+      ],
+      "binary_indices": [
+        9
+      ]
+    },
+    {
+      "seed": 20261034,
+      "binary_seed": 20261034,
+      "posture_groups": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          36
+        ],
+        [
+          37
+        ]
+      ],
+      "binary_indices": [
+        10
+      ]
+    },
+    {
+      "seed": 20261035,
+      "binary_seed": 20261035,
+      "posture_groups": [
+        [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        [
+          38
+        ],
+        [
+          39
+        ]
+      ],
+      "binary_indices": [
+        11
+      ]
+    },
+    {
+      "seed": 20261036,
+      "binary_seed": 20261036,
+      "posture_groups": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          40
+        ],
+        [
+          41
+        ]
+      ],
+      "binary_indices": [
+        12
+      ]
+    },
+    {
+      "seed": 20261037,
+      "binary_seed": 20261037,
+      "posture_groups": [
+        [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        [
+          42
+        ],
+        [
+          43
+        ]
+      ],
+      "binary_indices": [
+        13
+      ]
+    },
+    {
+      "seed": 20261038,
+      "binary_seed": 20261038,
+      "posture_groups": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          44
+        ],
+        [
+          45
+        ]
+      ],
+      "binary_indices": [
+        14
+      ]
+    },
+    {
+      "seed": 20261039,
+      "binary_seed": 20261039,
+      "posture_groups": [
+        [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        [
+          46
+        ],
+        [
+          47
+        ]
+      ],
+      "binary_indices": [
+        15
+      ]
+    },
+    {
+      "seed": 20261040,
+      "binary_seed": 20261040,
+      "posture_groups": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          48
+        ],
+        [
+          49
+        ]
+      ],
+      "binary_indices": [
+        16
+      ]
+    },
+    {
+      "seed": 20261041,
+      "binary_seed": 20261041,
+      "posture_groups": [
+        [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        [
+          50
+        ],
+        [
+          51
+        ]
+      ],
+      "binary_indices": [
+        17
+      ]
+    },
+    {
+      "seed": 20261042,
+      "binary_seed": 20261042,
+      "posture_groups": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          52
+        ],
+        [
+          53
+        ]
+      ],
+      "binary_indices": [
+        18
+      ]
+    },
+    {
+      "seed": 20261043,
+      "binary_seed": 20261043,
+      "posture_groups": [
+        [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        [
+          54
+        ],
+        [
+          55
+        ]
+      ],
+      "binary_indices": [
+        19
+      ]
+    },
+    {
+      "seed": 20261044,
+      "binary_seed": 20261044,
+      "posture_groups": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          56
+        ],
+        [
+          57
+        ]
+      ],
+      "binary_indices": [
+        20
+      ]
+    },
+    {
+      "seed": 20261045,
+      "binary_seed": 20261045,
+      "posture_groups": [
+        [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        [
+          58
+        ],
+        [
+          59
+        ]
+      ],
+      "binary_indices": [
+        21
+      ]
+    },
+    {
+      "seed": 20261046,
+      "binary_seed": 20261046,
+      "posture_groups": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          60
+        ],
+        [
+          61
+        ]
+      ],
+      "binary_indices": [
+        22
+      ]
+    },
+    {
+      "seed": 20261047,
+      "binary_seed": 20261047,
+      "posture_groups": [
+        [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        [
+          62
+        ],
+        [
+          63
+        ]
+      ],
+      "binary_indices": [
+        23
+      ]
+    }
+  ],
+  "neural_parameter_count": 10682624,
+  "weights_file": "weights.pt",
+  "weights_sha256": "29f0cf22e180740291a06a861e9ab5e45e1fc43aa197cc7661816d63821a818f",
+  "sample_rate_hz": 25,
+  "input_units": {
+    "acceleration": "m/s2",
+    "angular_velocity": "rad/s"
+  },
+  "required_modalities": [
+    "acceleration"
+  ],
+  "labels": [
+    "lying",
+    "sitting",
+    "standing",
+    "walking_running"
+  ],
+  "weights": "equal binary/posture pairwise mean within each seed, then equal seed mean",
+  "parent_weights": null,
+  "training_sources": [
+    "hapt",
+    "harth",
+    "mhealth",
+    "motion_sense",
+    "opportunity",
+    "pamap2",
+    "wisdm2019"
+  ],
+  "training_person_count": 108,
+  "development_person_count": 3,
+  "device_training": false,
+  "device_reference": {
+    "people": 9,
+    "recordings": 23,
+    "raw_recording_minutes": 140.55266666666665,
+    "task_seconds": 7799.52,
+    "main_intervals": 720,
+    "core_intervals": 153
+  },
+  "evaluation": {
+    "protocol": "frozenoriginalP1",
+    "tag_correct": 579,
+    "tag_total": 720,
+    "tag_accuracy": 0.8041666666666667,
+    "confirmed_core_accuracy": 0.7189542483660131,
+    "mean_person_duration_share_mae_pp": 7.317669202095579,
+    "all_6_ref_confusion": [
+      [
+        76,
+        2,
+        16,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        42,
+        21,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        23,
+        179,
+        32,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        40,
+        282,
+        0,
+        0,
+        1
+      ],
+      [
+        17,
+        7,
+        178,
+        41,
+        0,
+        0,
+        3
+      ],
+      [
+        11,
+        5,
+        19,
+        10,
+        0,
+        0,
+        0
+      ]
+    ],
+    "classes": [
+      {
+        "label": "lying",
+        "support": 94,
+        "correct": 76,
+        "predicted": 110,
+        "recall": 0.8085106382978723,
+        "precision": 0.6909090909090909,
+        "f1": 0.7450980392156863
+      },
+      {
+        "label": "sitting",
+        "support": 64,
+        "correct": 42,
+        "predicted": 79,
+        "recall": 0.65625,
+        "precision": 0.5316455696202531,
+        "f1": 0.5874125874125874
+      },
+      {
+        "label": "standing",
+        "support": 239,
+        "correct": 179,
+        "predicted": 453,
+        "recall": 0.7489539748953975,
+        "precision": 0.39514348785871967,
+        "f1": 0.5173410404624278
+      },
+      {
+        "label": "walking_running",
+        "support": 323,
+        "correct": 282,
+        "predicted": 365,
+        "recall": 0.8730650154798761,
+        "precision": 0.7726027397260274,
+        "f1": 0.8197674418604651
+      },
+      {
+        "label": "posture_transition",
+        "support": 246,
+        "correct": 0,
+        "predicted": 0,
+        "recall": 0.0,
+        "precision": 0.0,
+        "f1": 0.0
+      },
+      {
+        "label": "other_activity",
+        "support": 45,
+        "correct": 0,
+        "predicted": 0,
+        "recall": 0.0,
+        "precision": 0.0,
+        "f1": 0.0
+      }
+    ],
+    "source_report_sha256": "3e46224888722c87f5e76639e0dc018819186c5d2b6050d4f12ab037fda3fd27",
+    "classes_scope": "Legacy classes array includes all six mapped reference classes. Use four_main_class_only_event_metrics for precision and F1 on the720 main intervals.",
+    "four_main_class_only_event_metrics": [
+      {
+        "label": "lying",
+        "support": 94,
+        "correct": 76,
+        "recall": 0.8085106382978723,
+        "precision": 0.926829268292683,
+        "f1": 0.8636363636363636,
+        "core_support": 14,
+        "core_correct": 13
+      },
+      {
+        "label": "sitting",
+        "support": 64,
+        "correct": 42,
+        "recall": 0.65625,
+        "precision": 0.6268656716417911,
+        "f1": 0.6412213740458015,
+        "core_support": 9,
+        "core_correct": 3
+      },
+      {
+        "label": "standing",
+        "support": 239,
+        "correct": 179,
+        "recall": 0.7489539748953975,
+        "precision": 0.69921875,
+        "f1": 0.7232323232323232,
+        "core_support": 65,
+        "core_correct": 35
+      },
+      {
+        "label": "walking_running",
+        "support": 323,
+        "correct": 282,
+        "recall": 0.8730650154798761,
+        "precision": 0.8980891719745223,
+        "f1": 0.8854003139717426,
+        "core_support": 65,
+        "core_correct": 59
+      }
+    ]
+  },
+  "public_selected_arm": null,
+  "independent_device_test": false,
+  "seed_repetition_note": "Read paired group results; N pretrained posture branch is shared across the repeated ensembles. L/G posture refits and binary repetitions differ. Not all layers independently retrained.",
+  "selection_limitation": "Adaptive project validation on same9devicepeople, not an untouched customer blind test. Former public development people included in L/G training; not reused as new validation.",
+  "acceptance_status": "FROZEN_LIMITED_RELEASE_REPEAT_GATE_NOT_PASSED",
+  "created_utc": "2026-10-18T20:50:55.694187+00:00",
+  "historical_development_person_count": 7,
+  "former_development_promoted_to_training": true,
+  "prospectively_declared_primary": "FINAL",
+  "this_is_primary": true,
+  "source_export_model_card_sha256": "83eb2b2ad4eb3b449e38e68665b66446980d4e582fbd0dc99e52aeb1ee9ac607",
+  "release_review": {
+    "predeclared_repetition_gate_pass": false,
+    "original_reference_intervals": 720,
+    "confirmed_core_intervals": 153,
+    "external_validation_not_yet_observed": true,
+    "no_new_user_80_percent_guarantee": true,
+    "device_fitting": false
+  }
+}

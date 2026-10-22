@@ -1,0 +1,10 @@
+*.py text eol=lf
+*.md text eol=lf
+*.toml text eol=lf
+# Keep frozen upstream bytes and licence notices exactly as imported.
+src/imu_inference/_vendor/** -text -whitespace
+src/imu_inference/notices/** -text -whitespace
+src/imu_inference/assets/** -text -whitespace
+*.pt binary
+*.ubj binary
+*.joblib binary

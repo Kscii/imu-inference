@@ -1,0 +1,111 @@
+{
+  "profile": "e7-hard-positive-smoothed-2026102531-v1",
+  "seed": 2026102531,
+  "arm": "HARD_POSITIVE",
+  "state_mode": "smoothed",
+  "experimental": true,
+  "default_sign_adaptation": false,
+  "required_modalities": [
+    "acceleration",
+    "angular_velocity"
+  ],
+  "class_count": 4,
+  "parent_threshold": 0.5,
+  "state_recipe": {
+    "rate": 2,
+    "threshold": 0.85,
+    "weight": 0.05,
+    "confidence": 0.9
+  },
+  "transition": [
+    [
+      0.9996730237958601,
+      4.671088630570273e-05,
+      0.00027692882595523765,
+      3.3364918789787666e-06
+    ],
+    [
+      4.0266651518735856e-05,
+      0.9998712905246098,
+      5.752378788390837e-05,
+      3.091903598760075e-05
+    ],
+    [
+      6.048454166326441e-05,
+      0.00019355053332244612,
+      0.9978921137230352,
+      0.0018538512019790543
+    ],
+    [
+      1.0249608721187069e-06,
+      2.7673943547205087e-05,
+      0.0012678765988108404,
+      0.9987034244967699
+    ]
+  ],
+  "source_report_sha256": "3228067601c4c3d15697522c0528c8d3da468b26dd59296d59f9909dbf7ae081",
+  "acceptance": "EXPERIMENTAL_ES1_80_GATE_NOT_PASSED",
+  "metrics": {
+    "original_es1": 0.7409487085588065,
+    "original_duration_mae_pp": 5.180757950691558,
+    "sign_adapted_es1": 0.7436202824047574,
+    "sign_adapted_duration_mae_pp": 4.935803674494934,
+    "reference": "Repeatedly observed 9-person 23-record research reference; not blind or full-day"
+  },
+  "models": {
+    "r3": {
+      "file": "r3.ubj",
+      "sha256": "66464bdd4be077c2a49176cacb85a376b91acd6faaf9a1d9357a89fc90f885d0",
+      "source_file": "INVARIANT_GYRO-final-2026102069.ubj",
+      "source_sha256": "66464bdd4be077c2a49176cacb85a376b91acd6faaf9a1d9357a89fc90f885d0"
+    },
+    "r15": {
+      "file": "r15.ubj",
+      "sha256": "b8d8a183f3f2b960771b540e1437fde6a8438f1ececb50ac00fb73a63c294201",
+      "source_file": "D4M50-final-2026102411.ubj.gz",
+      "source_sha256": "7b65b2e1adde97227db0559d7b7dfe2b3f4b8d842e238b3ec646ee33c8a064ce"
+    },
+    "head": {
+      "file": "head.ubj",
+      "sha256": "b9596e53ce786ee1f9630ce23af461e66524abd26095cc5c385756c4b598ab95",
+      "source_file": "2026102531.ubj.gz",
+      "source_sha256": "8c963ff0bb572c0a26f5f9bf6788f3ce8c09bd6d452c906f5e4d407b6b70cd86"
+    },
+    "event": {
+      "file": "event.ubj",
+      "sha256": "af66d3f248e16caf49bad472bd05cc1df5348005564d96cb917011bc232ffd3f",
+      "source_file": "weights-000350.ubj",
+      "source_sha256": "af66d3f248e16caf49bad472bd05cc1df5348005564d96cb917011bc232ffd3f"
+    }
+  },
+  "sources": {
+    "af1_round1_v1.py": "9de9de75e0570500571ddfc7460a8cbd4075c14d668a6092692b3991c61f1ee3",
+    "af1_round2_v1.py": "0252ec443a9ba205a834032d3f3a77322e1a746bd88c0f49531901b4156b0331",
+    "af1_round3_v1.py": "a13def08347b5b7a9b2734b91c25102af34327ae0cf02e986e5eeab12d718579",
+    "af1_round10_v1.py": "9117f6afb0a4ad225dd115b9af8d4be909951e5041396c3ae6697616b7ca4c10",
+    "af1_round14_v1.py": "5b337fce75642f389cf0c9dfb83fd5eab73375295d920dfcddc33791ee91e641",
+    "af1_round15_v1.py": "51546b4f8616e97f186f2a75c455de68a81489a1f61c2b666e31a1b138c8ef15",
+    "af1_round21_v1.py": "098a39515c2ff31482641933cdcdf51f84cdc7a2d116c3ca8933a0ac37d5b2db",
+    "af1_round27_v2.py": "9d85e7b1124f4c54a04351c46f0e28d1569a37d6741b14a73bb9641ba92b050b",
+    "af1_y_axis_ya1_v1.py": "c219711d04edb185c587b4a9cf5c609bc44e57cfabae71b7154ef97d674a54a9",
+    "af1_gr1_acceleration_v1.py": "0f857d29998e92fdb11102f6904076905f73a40c86a709d52d2b6c5e328c75b9",
+    "af1_gr1_acceleration_train_v1.py": "0e4c57ffa0036b416307491e47fb9a8907132d0f2c83453b18314e35a013c76b",
+    "af1_gr1_chain_y_v1.py": "96967bd39fe949e28f93e5b0b2220fbd08fb74ad3ad20d7914c971b56d6a5c2e",
+    "residual_state.py": "a4a3c96b648f8e4f8156fe4d4e81483396b46d5cbc411812021c03e9e392dbe9",
+    "evaluate_hard_state.py": "a46698aac51a1b9fb06a323c877a471abad1983608b4ccd2c67c1166c96c58b0",
+    "prepare_hard_training.py": "51127226b9e3f7667f1bbb52aafd26b7cba1d84155808ae10467f30503067a52",
+    "af1_round5_v1.py": "e50c02d7a1d91bf0455b81006757da133d5fce5b252c9840fcd097234fbe685a",
+    "af1_round6_v1.py": "b30e20fc0b5561eafbdfe3c800b5379826f60892ae5fd955be02d2324371c338",
+    "af1_round9_v1.py": "6bc6e1f7a60ab39db453f6d2586451cf736574ff4e520c88888888942a6159e3",
+    "af1_round17_v1.py": "3be775dc89f1d72fc7d19cc707d0a7002a7b326e6697cc243eeab1e405435936",
+    "af1_upright_v1.py": "7988f1cbc1142c930b704444c41df6d0674b9b083e05c793706a1d481dbe7e29",
+    "af1_posture_shape_v1.py": "2e46ee27d7601b69b21d375db813526b36e6cc62d173ca658d2e7626a430b773",
+    "af1_posture_gyro_v1.py": "aa79f1e57a674550e3748bbd0a835b6f9c3f874b9bb996ce3bf7f694579563d0",
+    "af1_projection_r28_v1.py": "4a85013270bd47ec586c0537f827c011c86035e725f04aeae1d228254d89cf5b",
+    "af1_gr1_supervision_v1.py": "81ce1119b0f519ea22b862148d3a085c3320a4000362801470c9682d66c7685d",
+    "af1_gr1_audit_v2.py": "e3a0326cf087462dbcca790db122ed7e82741f53de81c0a047a4dae56914b881",
+    "af1_round39_v1.py": "9d9d26b649cc7090d8625b5c46594eb9efe7fa582cff42e0484fdc713afcf06f",
+    "af1_kinematics_v1.py": "1745f95716afd36deb26137c55044d363d6870419fdc47efd3f51c1ee82831a4",
+    "af1_decode_r29_v1.py": "cd4dbb996a88aa19c6ff344a2bfd049cc4e37272092b89f2e85952800d455e6e"
+  }
+}

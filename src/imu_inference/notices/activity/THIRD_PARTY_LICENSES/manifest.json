@@ -1,0 +1,224 @@
+[
+  {
+    "wheel": "cloudpickle-3.1.2-py3-none-any.whl",
+    "license_files": [
+      "cloudpickle/licenses/LICENSE"
+    ]
+  },
+  {
+    "wheel": "filelock-3.32.3-py3-none-any.whl",
+    "license_files": [
+      "filelock/licenses/LICENSE"
+    ]
+  },
+  {
+    "wheel": "fsspec-2026.7.0-py3-none-any.whl",
+    "license_files": [
+      "fsspec/licenses/LICENSE"
+    ]
+  },
+  {
+    "wheel": "jinja2-3.1.6-py3-none-any.whl",
+    "license_files": [
+      "jinja2/licenses/LICENSE.txt"
+    ]
+  },
+  {
+    "wheel": "joblib-1.6.0-py3-none-any.whl",
+    "license_files": [
+      "joblib/licenses/LICENSE.txt"
+    ]
+  },
+  {
+    "wheel": "markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+    "license_files": [
+      "markupsafe/licenses/LICENSE.txt"
+    ]
+  },
+  {
+    "wheel": "mpmath-1.3.0-py3-none-any.whl",
+    "license_files": [
+      "mpmath/LICENSE"
+    ]
+  },
+  {
+    "wheel": "networkx-3.6.1-py3-none-any.whl",
+    "license_files": [
+      "networkx/licenses/LICENSE.txt"
+    ]
+  },
+  {
+    "wheel": "numpy-2.5.3-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+    "license_files": [
+      "numpy/licenses/LICENSE.txt",
+      "numpy/licenses/numpy/_core/include/numpy/libdivide/LICENSE.txt",
+      "numpy/licenses/numpy/_core/src/common/pythoncapi-compat/COPYING",
+      "numpy/licenses/numpy/_core/src/highway/LICENSE",
+      "numpy/licenses/numpy/_core/src/multiarray/dragon4_LICENSE.txt",
+      "numpy/licenses/numpy/_core/src/npysort/x86-simd-sort/LICENSE.md",
+      "numpy/licenses/numpy/_core/src/umath/svml/LICENSE",
+      "numpy/licenses/numpy/fft/pocketfft/LICENSE.md",
+      "numpy/licenses/numpy/linalg/lapack_lite/LICENSE.txt",
+      "numpy/licenses/numpy/ma/LICENSE",
+      "numpy/licenses/numpy/random/LICENSE.md",
+      "numpy/licenses/numpy/random/src/distributions/LICENSE.md",
+      "numpy/licenses/numpy/random/src/mt19937/LICENSE.md",
+      "numpy/licenses/numpy/random/src/pcg64/LICENSE.md",
+      "numpy/licenses/numpy/random/src/philox/LICENSE.md",
+      "numpy/licenses/numpy/random/src/sfc64/LICENSE.md",
+      "numpy/licenses/numpy/random/src/splitmix64/LICENSE.md"
+    ]
+  },
+  {
+    "wheel": "scikit_learn-1.7.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+    "license_files": [
+      "scikit_learn/licenses/COPYING"
+    ]
+  },
+  {
+    "wheel": "scipy-1.18.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+    "license_files": [
+      "scipy/LICENSE.txt"
+    ]
+  },
+  {
+    "wheel": "setuptools-78.1.0-py3-none-any.whl",
+    "license_files": [
+      "setuptools/licenses/LICENSE",
+      "setuptools/licenses/LICENSE",
+      "setuptools/LICENSE",
+      "setuptools/LICENSE",
+      "setuptools/LICENSE",
+      "setuptools/LICENSE",
+      "setuptools/LICENSE",
+      "setuptools/LICENSE",
+      "setuptools/LICENSE",
+      "setuptools/LICENSE",
+      "setuptools/LICENSE",
+      "setuptools/LICENSE",
+      "setuptools/LICENSE.APACHE",
+      "setuptools/LICENSE.BSD",
+      "setuptools/LICENSE",
+      "setuptools/LICENSE",
+      "setuptools/LICENSE",
+      "setuptools/LICENSE.txt",
+      "setuptools/LICENSE"
+    ]
+  },
+  {
+    "wheel": "sympy-1.14.0-py3-none-any.whl",
+    "license_files": [
+      "sympy/licenses/AUTHORS",
+      "sympy/licenses/LICENSE"
+    ]
+  },
+  {
+    "wheel": "threadpoolctl-3.7.0-py3-none-any.whl",
+    "license_files": [
+      "threadpoolctl/licenses/LICENSE"
+    ]
+  },
+  {
+    "wheel": "torch-2.14.1+cpu-cp312-cp312-manylinux_2_28_x86_64.whl",
+    "license_files": [
+      "torch/licenses/LICENSE",
+      "torch/licenses/third_party/FP16/LICENSE",
+      "torch/licenses/third_party/FXdiv/LICENSE",
+      "torch/licenses/third_party/NNPACK/LICENSE",
+      "torch/licenses/third_party/NVTX/LICENSE.txt",
+      "torch/licenses/third_party/NVTX/docs/LICENSE.txt",
+      "torch/licenses/third_party/NVTX/python/LICENSE.txt",
+      "torch/licenses/third_party/NVTX/rust/LICENSE",
+      "torch/licenses/third_party/VulkanMemoryAllocator/LICENSE.txt",
+      "torch/licenses/third_party/XNNPACK/LICENSE",
+      "torch/licenses/third_party/aiter/LICENSE",
+      "torch/licenses/third_party/aiter/3rdparty/composable_kernel/LICENSE",
+      "torch/licenses/third_party/benchmark/LICENSE",
+      "torch/licenses/third_party/composable_kernel/LICENSE",
+      "torch/licenses/third_party/cpp-httplib/LICENSE",
+      "torch/licenses/third_party/cpuinfo/LICENSE",
+      "torch/licenses/third_party/cpuinfo/deps/clog/LICENSE",
+      "torch/licenses/third_party/cudnn_frontend/LICENSE.txt",
+      "torch/licenses/third_party/cutlass/LICENSE.txt",
+      "torch/licenses/third_party/cutlass/python/LICENSE.txt",
+      "torch/licenses/third_party/fbgemm/LICENSE",
+      "torch/licenses/third_party/fbgemm/external/composable_kernel/LICENSE",
+      "torch/licenses/third_party/fbgemm/external/cpuinfo/LICENSE",
+      "torch/licenses/third_party/fbgemm/external/cpuinfo/deps/clog/LICENSE",
+      "torch/licenses/third_party/fbgemm/external/cutlass/LICENSE.txt",
+      "torch/licenses/third_party/fbgemm/external/cutlass/python/LICENSE.txt",
+      "torch/licenses/third_party/fbgemm/external/googletest/LICENSE",
+      "torch/licenses/third_party/fbgemm/external/hipify_torch/LICENSE.txt",
+      "torch/licenses/third_party/fbgemm/fbgemm_gpu/experimental/hstu/LICENSE",
+      "torch/licenses/third_party/fbgemm/fbgemm_gpu/src/quantize_ops/mx/LICENSE",
+      "torch/licenses/third_party/fbgemm/fbgemm_gpu/test/quantize/mx/LICENSE",
+      "torch/licenses/third_party/flash-attention/LICENSE",
+      "torch/licenses/third_party/flash-attention/csrc/composable_kernel/LICENSE",
+      "torch/licenses/third_party/flash-attention/csrc/cutlass/LICENSE.txt",
+      "torch/licenses/third_party/flash-attention/csrc/cutlass/python/LICENSE.txt",
+      "torch/licenses/third_party/flash-attention/flash_attn/cute/LICENSE",
+      "torch/licenses/third_party/flash-attention/third_party/aiter/LICENSE",
+      "torch/licenses/third_party/flash-attention/third_party/aiter/3rdparty/composable_kernel/LICENSE",
+      "torch/licenses/third_party/flatbuffers/LICENSE",
+      "torch/licenses/third_party/flatbuffers/dart/LICENSE",
+      "torch/licenses/third_party/flatbuffers/swift/LICENSE",
+      "torch/licenses/third_party/fmt/LICENSE",
+      "torch/licenses/third_party/gemmlowp/gemmlowp/LICENSE",
+      "torch/licenses/third_party/gloo/LICENSE",
+      "torch/licenses/third_party/googletest/LICENSE",
+      "torch/licenses/third_party/ideep/LICENSE",
+      "torch/licenses/third_party/ideep/mkl-dnn/LICENSE",
+      "torch/licenses/third_party/ideep/mkl-dnn/third_party/gtest/LICENSE",
+      "torch/licenses/third_party/ideep/mkl-dnn/third_party/opencl/LICENSE",
+      "torch/licenses/third_party/kineto/LICENSE",
+      "torch/licenses/third_party/kineto/libkineto/third_party/dynolog_headers/LICENSE",
+      "torch/licenses/third_party/kineto/libkineto/third_party/fmt/LICENSE",
+      "torch/licenses/third_party/kineto/libkineto/third_party/googletest/LICENSE",
+      "torch/licenses/third_party/llvm-openmp/LICENSE.txt",
+      "torch/licenses/third_party/mimalloc/LICENSE",
+      "torch/licenses/third_party/miniz-3.0.2/LICENSE",
+      "torch/licenses/third_party/mslk/LICENSE",
+      "torch/licenses/third_party/mslk/external/composable_kernel/LICENSE",
+      "torch/licenses/third_party/mslk/external/cutlass/LICENSE.txt",
+      "torch/licenses/third_party/mslk/external/cutlass/python/LICENSE.txt",
+      "torch/licenses/third_party/mslk/external/googletest/LICENSE",
+      "torch/licenses/third_party/mslk/external/hipify_torch/LICENSE.txt",
+      "torch/licenses/third_party/mslk/mslk/attention/flash_attn/LICENSE",
+      "torch/licenses/third_party/onnx/LICENSE",
+      "torch/licenses/third_party/onnx/third_party/pybind11/LICENSE",
+      "torch/licenses/third_party/perfetto/LICENSE",
+      "torch/licenses/third_party/protobuf/LICENSE",
+      "torch/licenses/third_party/protobuf/third_party/benchmark/LICENSE",
+      "torch/licenses/third_party/protobuf/third_party/googletest/LICENSE",
+      "torch/licenses/third_party/protobuf/third_party/googletest/googlemock/LICENSE",
+      "torch/licenses/third_party/protobuf/third_party/googletest/googlemock/scripts/generator/LICENSE",
+      "torch/licenses/third_party/protobuf/third_party/googletest/googletest/LICENSE",
+      "torch/licenses/third_party/protobuf/third_party/utf8_range/LICENSE",
+      "torch/licenses/third_party/psimd/LICENSE",
+      "torch/licenses/third_party/pthreadpool/LICENSE",
+      "torch/licenses/third_party/pybind11/LICENSE",
+      "torch/licenses/third_party/python-peachpy/LICENSE.rst",
+      "torch/licenses/third_party/sleef/LICENSE.txt",
+      "torch/licenses/third_party/tensorpipe/LICENSE.txt",
+      "torch/licenses/third_party/tensorpipe/third_party/googletest/LICENSE",
+      "torch/licenses/third_party/tensorpipe/third_party/googletest/googlemock/LICENSE",
+      "torch/licenses/third_party/tensorpipe/third_party/googletest/googlemock/scripts/generator/LICENSE",
+      "torch/licenses/third_party/tensorpipe/third_party/googletest/googletest/LICENSE",
+      "torch/licenses/third_party/tensorpipe/third_party/libnop/LICENSE",
+      "torch/licenses/third_party/tensorpipe/third_party/libuv/LICENSE",
+      "torch/licenses/third_party/tensorpipe/third_party/pybind11/LICENSE"
+    ]
+  },
+  {
+    "wheel": "typing_extensions-4.16.0-py3-none-any.whl",
+    "license_files": [
+      "typing_extensions/licenses/LICENSE"
+    ]
+  },
+  {
+    "wheel": "xgboost_cpu-3.4.1-py3-none-manylinux_2_28_x86_64.whl",
+    "license_files": [
+      "xgboost_cpu/licenses/LICENSE"
+    ]
+  }
+]

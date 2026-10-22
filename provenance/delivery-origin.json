@@ -1,0 +1,7 @@
+{
+  "schema": "imu.delivery.origin.v1",
+  "upstream": {
+    "source_commit": "924f84bfcf8e2a723e6280746a176ec62a2d3fba"
+  },
+  "scope": "New customer history from reviewed source; original development repositories retained internally"
+}

@@ -1,0 +1,12 @@
+{
+  "status": "GENERIC_ESTIMATE_AVAILABLE_STRICT_WORKFLOW_GATE_NOT_PASSED",
+  "estimated_step_count": true,
+  "estimated_cadence": true,
+  "certified_heel_strike_times": false,
+  "step_interval_variability_validated": false,
+  "all_day_chest_accuracy": null,
+  "small_bout_warning": "1-5step reference bouts have67.3% normalized absolute count error in the heldout test.",
+  "main_activity_model_changed": false,
+  "output_is_estimate": true,
+  "default_minimum_contiguous_input_s": 4
+}

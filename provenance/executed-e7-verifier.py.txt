@@ -1,0 +1,23 @@
+import json, time, resource
+from pathlib import Path
+import numpy as np
+from imu_inference.engine import FrozenBackend
+from imu_inference.e7 import E7Model
+root=Path('/home/kscii/.local/share/imu-motion-simulator/studies/chest-har-expanded-20261011')
+protocol=json.loads((root/'autonomous-optimization-ao1-v1/research/light-transition-lt1-v1/protocol.json').read_text())
+e7root=root/'full-absorption-af1-v1/autonomous-goal-ag2-v1/observation-state-e7-v1'
+backend=FrozenBackend(threads=2,steps_enabled=False);model=E7Model(2)
+report={'schema':'imu.e7.packaging-parity.v1','records':[], 'raw_data_exported':False}
+for i,item in enumerate(protocol['device']):
+ t=time.monotonic();x=np.load(item['signal_path'])['x'];v=np.load(item['mask_path'])['task_valid'].astype(bool)
+ p=backend.activity_probabilities(x,v);cached=np.load(item['baseline_path']);ref=np.load(e7root/'predictions'/f'{i:02}.npz')
+ row={'index':i,'samples':len(x),'baseline_max_abs_error':float(np.max(np.abs(p[v]-cached['p'][v,:4]))),'modes':{}}
+ for enabled,name in [(False,'ORIGINAL'),(True,'AUTOMATIC_SIGN')]:
+  tags,diag=model.predict(x,v,p,sign_adaptation=enabled)
+  expected=ref[f'tag-HARD_POSITIVE-2026102531-{name}-smoothed']
+  row['modes'][name]={'mismatched_samples':int(np.count_nonzero(tags[v]!=expected[v])), 'valid_samples':int(v.sum()),'diagnostics':diag}
+ row['seconds']=time.monotonic()-t;report['records'].append(row)
+ report['peak_rss_kib']=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+ Path('parity-locked.json').write_text(json.dumps(report,indent=2));print(json.dumps(row),flush=True)
+report['passed']=all(m['mismatched_samples']==0 for r in report['records'] for m in r['modes'].values())
+Path('parity-locked.json').write_text(json.dumps(report,indent=2))

@@ -1,0 +1,108 @@
+{
+  "status": "PASS",
+  "heldout_exact_replays": 15,
+  "interface_cases": 8,
+  "old_frozen_artifacts": 35,
+  "old_frozen_artifacts_unchanged": true,
+  "cold_model_load_seconds": 0.20389238104689866,
+  "algorithm_wall_seconds": 4.8584983120672405,
+  "input_hours": 14.936266666666667,
+  "realtime_multiple": 11067.320918162712,
+  "peak_rss_mib": 386.8046875,
+  "total_worker_seconds": 5.15495998901315,
+  "records": [
+    {
+      "person": "P01",
+      "seconds": 1.0054999450221658,
+      "recording_seconds": 3600.0,
+      "exact_event_replay": true
+    },
+    {
+      "person": "P02",
+      "seconds": 0.2377398230601102,
+      "recording_seconds": 3600.04,
+      "exact_event_replay": true
+    },
+    {
+      "person": "P05",
+      "seconds": 0.15579077100846916,
+      "recording_seconds": 3600.0,
+      "exact_event_replay": true
+    },
+    {
+      "person": "P08",
+      "seconds": 0.17093149898573756,
+      "recording_seconds": 3600.0,
+      "exact_event_replay": true
+    },
+    {
+      "person": "P10",
+      "seconds": 0.12587700691074133,
+      "recording_seconds": 3600.0,
+      "exact_event_replay": true
+    },
+    {
+      "person": "P12",
+      "seconds": 0.34996522800065577,
+      "recording_seconds": 3370.52,
+      "exact_event_replay": true
+    },
+    {
+      "person": "P14",
+      "seconds": 0.31064152205362916,
+      "recording_seconds": 3600.0,
+      "exact_event_replay": true
+    },
+    {
+      "person": "P15",
+      "seconds": 0.24266733997501433,
+      "recording_seconds": 3600.0,
+      "exact_event_replay": true
+    },
+    {
+      "person": "P18",
+      "seconds": 0.16202090098522604,
+      "recording_seconds": 3600.0,
+      "exact_event_replay": true
+    },
+    {
+      "person": "P19",
+      "seconds": 0.38046948600094765,
+      "recording_seconds": 3600.0,
+      "exact_event_replay": true
+    },
+    {
+      "person": "P21",
+      "seconds": 0.31799734209198505,
+      "recording_seconds": 3600.0,
+      "exact_event_replay": true
+    },
+    {
+      "person": "P24",
+      "seconds": 0.4005082049407065,
+      "recording_seconds": 3600.0,
+      "exact_event_replay": true
+    },
+    {
+      "person": "P31",
+      "seconds": 0.18827629799488932,
+      "recording_seconds": 3600.0,
+      "exact_event_replay": true
+    },
+    {
+      "person": "P33",
+      "seconds": 0.39691590401344,
+      "recording_seconds": 3600.0,
+      "exact_event_replay": true
+    },
+    {
+      "person": "P38",
+      "seconds": 0.4131970410235226,
+      "recording_seconds": 3600.0,
+      "exact_event_replay": true
+    }
+  ],
+  "threads": 2,
+  "hardware_note": "LocalCPU, timings measured while other independent project work may run; excludes network upload and server concurrency.",
+  "at_utc": "2026-10-19T01:26:22.735320+00:00"
+}

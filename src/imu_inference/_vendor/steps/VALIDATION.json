@@ -1,0 +1,143 @@
+{
+  "schema": "imu.steps.validation.v2",
+  "status": "GENERIC_ESTIMATE_AVAILABLE_STRICT_WORKFLOW_GATE_NOT_PASSED",
+  "scope": {
+    "source": "OxWalk",
+    "placement": "hip",
+    "sample_rate_hz": 25,
+    "heldout_people": 15,
+    "hours": 14.936266666666667,
+    "reference_steps": 27631,
+    "role": "Person-heldout from all local fitting and parameter selection; one frozen final evaluation. Healthy unassisted adult free living, not a chest-device or assisted-gait accuracy claim."
+  },
+  "selected": {
+    "people": 15,
+    "reference_steps": 27631,
+    "predicted_steps": 27166,
+    "count_person_balanced_error": 0.2339800181417281,
+    "recording_total_mape": 0.06138826360852941,
+    "tp": 15307,
+    "fp": 11859,
+    "fn": 12324,
+    "event_f1": 0.5586802197200577,
+    "negative_hours": 9.113888888888889,
+    "negative_false_steps": 463,
+    "negative_false_steps_per_hour": 50.80158488265772,
+    "cadence_person_balanced_mae_spm": 5.687545539724167,
+    "cadence_person_balanced_coverage": 0.7742520569745512,
+    "cadence_eligible_seconds": 15303.669999999995,
+    "cadence_reported_seconds": 11814.639999999998,
+    "strata": {
+      "1-5steps": {
+        "bouts": 421,
+        "reference_steps": 985,
+        "absolute_count_error": 663,
+        "normalized_error": 0.6730964467005076
+      },
+      "6-10steps": {
+        "bouts": 113,
+        "reference_steps": 852,
+        "absolute_count_error": 305,
+        "normalized_error": 0.357981220657277
+      },
+      "over10steps": {
+        "bouts": 199,
+        "reference_steps": 25794,
+        "absolute_count_error": 903,
+        "normalized_error": 0.035008141428239124
+      },
+      "under8s": {
+        "bouts": 552,
+        "reference_steps": 2065,
+        "absolute_count_error": 1022,
+        "normalized_error": 0.49491525423728816
+      },
+      "atleast8s": {
+        "bouts": 181,
+        "reference_steps": 25566,
+        "absolute_count_error": 849,
+        "normalized_error": 0.0332081670969256
+      }
+    },
+    "count_person_bootstrap95": [
+      0.13363768821011376,
+      0.35546535584197975
+    ]
+  },
+  "fixed_existing_gate_comparator": {
+    "people": 15,
+    "reference_steps": 27631,
+    "predicted_steps": 17088,
+    "count_person_balanced_error": 0.4579821330150903,
+    "recording_total_mape": 0.3098751517754608,
+    "tp": 9047,
+    "fp": 8041,
+    "fn": 18584,
+    "event_f1": 0.40461548782396745,
+    "negative_hours": 9.113888888888889,
+    "negative_false_steps": 286,
+    "negative_false_steps_per_hour": 31.380676622980797,
+    "cadence_person_balanced_mae_spm": 6.211502487489754,
+    "cadence_person_balanced_coverage": 0.15868160629283956,
+    "cadence_eligible_seconds": 15303.669999999995,
+    "cadence_reported_seconds": 1075.7699999999986,
+    "strata": {
+      "1-5steps": {
+        "bouts": 421,
+        "reference_steps": 985,
+        "absolute_count_error": 749,
+        "normalized_error": 0.7604060913705584
+      },
+      "6-10steps": {
+        "bouts": 113,
+        "reference_steps": 852,
+        "absolute_count_error": 511,
+        "normalized_error": 0.5997652582159625
+      },
+      "over10steps": {
+        "bouts": 199,
+        "reference_steps": 25794,
+        "absolute_count_error": 10397,
+        "normalized_error": 0.4030782352485074
+      },
+      "under8s": {
+        "bouts": 552,
+        "reference_steps": 2065,
+        "absolute_count_error": 1365,
+        "normalized_error": 0.6610169491525424
+      },
+      "atleast8s": {
+        "bouts": 181,
+        "reference_steps": 25566,
+        "absolute_count_error": 10292,
+        "normalized_error": 0.40256590784635843
+      }
+    },
+    "count_person_bootstrap95": [
+      0.3612529192458744,
+      0.5624613741324481
+    ]
+  },
+  "gates": {
+    "count_10s_person_error_at_most_15pct": false,
+    "cadence_mae_at_most_10spm": true,
+    "cadence_coverage_at_least_80pct": false,
+    "zero_step_false_rate_at_most_10_per_hour": false,
+    "event_f1_at_least_85pct": false
+  },
+  "claims": [
+    "Recording-total mean absolute percentage error is6.14%; this is not93.86% event accuracy.",
+    "Totals can hide cancellation of false and missed steps.10s count error23.40% and negative50.80/h are also retained.",
+    "No all-day chest-device accuracy established. No private foot annotations required to use the generic estimate.",
+    "Median step-time/IQR, spatial gait and disease outputs remain unvalidated."
+  ],
+  "recipe": {
+    "event_core": "mobgap1.2.0 IcdShinImproved(norm)",
+    "context_model": "HistGradientBoostingClassifier150iterations,depth4,max15leaves,31features",
+    "development_people": 24,
+    "threshold": 0.5,
+    "no_private_training": true,
+    "model_sha256": "6b4316de23718cf74fcc832e2f37b059ac116d576848a4819421762a7ca840d7"
+  },
+  "runtime_cadence_note": "Runtime cadence is calculated within predicted continuous bouts only. Reported validation MAE uses reference-eligible bouts, with missing outputs retained in the coverage measure."
+}

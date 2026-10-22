@@ -1,0 +1,12 @@
+{
+  "wheel_sha256": "b0cd7adeba856e589e5671ba15629dc2d6105f78810e9990250c63b061f5cc75",
+  "executed_script_sha256": "f630b21397ce92d8f371a0e7b49f8410c0845fba6ed8494562306b22cf9450aa",
+  "execution_host": "Ubuntu source-data host",
+  "workers": 2,
+  "threads_per_worker": 2,
+  "actual_tested_component": "activity classification only; steps disabled in workers",
+  "report_metadata_note": "Raw report provenance records the bundle default (GP2 on), not the tested component switch. GP2 was tested separately in real-model and container tests. The current verifier script explicitly records steps_enabled=false.",
+  "raw_report": "fc1-regression.json",
+  "raw_report_sha256": "184c19c644c38e92b5570d07955fad7f4e99a62e4e16457c20e653285e5fb7e3",
+  "exit_status": 0
+}

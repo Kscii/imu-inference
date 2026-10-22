@@ -1,0 +1,1811 @@
+{
+  "schema": "imu.onnx.probe.v1",
+  "scope": "FP32 neural members on synthetic representations only",
+  "promoted": false,
+  "missing_gates": [
+    "full-pipeline ES1",
+    "per-class",
+    "frame",
+    "duration",
+    "GP2"
+  ],
+  "versions": {
+    "torch": "2.14.1+cpu",
+    "onnx": "1.23.2",
+    "onnxruntime": "1.31.0"
+  },
+  "members": [
+    {
+      "member": 0,
+      "arm": "E",
+      "sha256": "bb7f9291a025639c57e5f3db3450a9043195532cc12fc9b9c7e00d5a17039f08",
+      "bytes": 585703,
+      "max_abs_error": 1.1444091796875e-05,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.0013821080210618675,
+          "onnx_s": 0.0013669729814864695
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.002395967021584511,
+          "onnx_s": 0.0025231000036001205
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.018505087995436043,
+          "onnx_s": 0.0156427159672603
+        }
+      ]
+    },
+    {
+      "member": 1,
+      "arm": "E",
+      "sha256": "cd254ee5c56bb00368ac7c2cd6734964a5ab22fa60bc6d3b33c7c1cd4d11c29d",
+      "bytes": 585703,
+      "max_abs_error": 8.58306884765625e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.0013688200269825757,
+          "onnx_s": 0.0013699239934794605
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.0023185700410977006,
+          "onnx_s": 0.0025305739836767316
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.021067055000457913,
+          "onnx_s": 0.015677864954341203
+        }
+      ]
+    },
+    {
+      "member": 2,
+      "arm": "E",
+      "sha256": "672fc3d340d278ea7094c6b6410c9662319b67c222e0cd0f2683e3013cbac43b",
+      "bytes": 585703,
+      "max_abs_error": 5.7220458984375e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.0013418800081126392,
+          "onnx_s": 0.0013506370014511049
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.002309515024535358,
+          "onnx_s": 0.0025041649932973087
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.01828927599126473,
+          "onnx_s": 0.015640300000086427
+        }
+      ]
+    },
+    {
+      "member": 3,
+      "arm": "E",
+      "sha256": "61a7ffac5eeec8d3b62cd83566144b78b7b1b10e7aebdd43402e53ce52a5b258",
+      "bytes": 585703,
+      "max_abs_error": 8.106231689453125e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.001372243044897914,
+          "onnx_s": 0.0013795210397802293
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.0022967440309002995,
+          "onnx_s": 0.002510183025151491
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.018503019004128873,
+          "onnx_s": 0.01570714998524636
+        }
+      ]
+    },
+    {
+      "member": 4,
+      "arm": "G",
+      "sha256": "84a849c77a99a48fc2a1de77f17c8a48d6535138339c1e863adec370aad1b9d1",
+      "bytes": 763935,
+      "max_abs_error": 4.649162292480469e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.01629684498766437,
+          "onnx_s": 0.0030553240212611854
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.014921413967385888,
+          "onnx_s": 0.004490198974963278
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.04565372003708035,
+          "onnx_s": 0.03588337101973593
+        }
+      ]
+    },
+    {
+      "member": 5,
+      "arm": "G",
+      "sha256": "7aa97fd3533a5ebbe869f6aaef0f917e193070435888596686de6e9707a60fbc",
+      "bytes": 763935,
+      "max_abs_error": 3.0994415283203125e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.016623772971797734,
+          "onnx_s": 0.0030202100169844925
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.014893484010826796,
+          "onnx_s": 0.004362181993201375
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.04552562802564353,
+          "onnx_s": 0.03522584098391235
+        }
+      ]
+    },
+    {
+      "member": 6,
+      "arm": "G",
+      "sha256": "648530d6c26974269d907580efd35d7a410f560c34783912f0d03f956f53aaee",
+      "bytes": 763935,
+      "max_abs_error": 2.86102294921875e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.01673031796235591,
+          "onnx_s": 0.002960111014544964
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.014987436006776989,
+          "onnx_s": 0.004344728018622845
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.0449535499792546,
+          "onnx_s": 0.034582605003379285
+        }
+      ]
+    },
+    {
+      "member": 7,
+      "arm": "G",
+      "sha256": "850625c2e1ede0ab559a8cd27d367fa817192629b73017e7d1ecac426a184cdc",
+      "bytes": 763935,
+      "max_abs_error": 6.67572021484375e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.016206434986088425,
+          "onnx_s": 0.003079966001678258
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.014687523012980819,
+          "onnx_s": 0.004549449949990958
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.04526410601101816,
+          "onnx_s": 0.03667587699601427
+        }
+      ]
+    },
+    {
+      "member": 8,
+      "arm": "E",
+      "sha256": "bcd38acb7cb4bc3720c1c86c1b5d4e656dac9963e913938ddc95ebad9c2242a6",
+      "bytes": 585703,
+      "max_abs_error": 4.76837158203125e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.0013475780142471194,
+          "onnx_s": 0.001376887026708573
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.0023294309503398836,
+          "onnx_s": 0.0025199109804816544
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.01806380698690191,
+          "onnx_s": 0.01558587298495695
+        }
+      ]
+    },
+    {
+      "member": 9,
+      "arm": "G",
+      "sha256": "442bd11ea28e4df68f4bdf5b4d12fefd492ce182eeaf7738314abfb80b34448a",
+      "bytes": 763935,
+      "max_abs_error": 4.9173831939697266e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.016683591005858034,
+          "onnx_s": 0.0031084640068002045
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.014737364021129906,
+          "onnx_s": 0.004417814023327082
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.045513191958889365,
+          "onnx_s": 0.03604552801698446
+        }
+      ]
+    },
+    {
+      "member": 10,
+      "arm": "E",
+      "sha256": "f8688f313205097b5a058d246aeccfb7e81c67b19dd0dd060daff4e300d519fd",
+      "bytes": 585703,
+      "max_abs_error": 9.5367431640625e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.0014211839879862964,
+          "onnx_s": 0.0013827100046910346
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.0024632499553263187,
+          "onnx_s": 0.002591684984508902
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.018347367993555963,
+          "onnx_s": 0.015664121019653976
+        }
+      ]
+    },
+    {
+      "member": 11,
+      "arm": "E",
+      "sha256": "e0de637efd9e5b26ab36bc385e3af5071abbf6df833796db821b704ebf9b02f4",
+      "bytes": 585703,
+      "max_abs_error": 1.1444091796875e-05,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.001360737020149827,
+          "onnx_s": 0.0013466119999065995
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.0022954369778744876,
+          "onnx_s": 0.0024994639679789543
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.018365109048318118,
+          "onnx_s": 0.0156424050219357
+        }
+      ]
+    },
+    {
+      "member": 12,
+      "arm": "E",
+      "sha256": "3ee4c8ff2ccbd80de2906122cfaddf115c80d1800f4d55ced5313135ad905040",
+      "bytes": 585703,
+      "max_abs_error": 8.58306884765625e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.0013424400240182877,
+          "onnx_s": 0.0013430219842121005
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.0023051899624988437,
+          "onnx_s": 0.002512462029699236
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.01824039197526872,
+          "onnx_s": 0.015607028035447001
+        }
+      ]
+    },
+    {
+      "member": 13,
+      "arm": "E",
+      "sha256": "b6aefc1452258bdfa6e374b6c614eafbd95fb49dbfd25b6111f6e3e2dc24e149",
+      "bytes": 585703,
+      "max_abs_error": 1.1444091796875e-05,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.0014082090347073972,
+          "onnx_s": 0.001361447968520224
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.0023362539941444993,
+          "onnx_s": 0.0024993179831653833
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.01860356196993962,
+          "onnx_s": 0.01574754301691428
+        }
+      ]
+    },
+    {
+      "member": 14,
+      "arm": "G",
+      "sha256": "c5e21d7bf7af43c3867b86accf977ef91e9e69696f7c4d06e76a41f4dcbe4f03",
+      "bytes": 763935,
+      "max_abs_error": 4.470348358154297e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.016624075011350214,
+          "onnx_s": 0.003064567979890853
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.014902882045134902,
+          "onnx_s": 0.004468752013053745
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.04584924899972975,
+          "onnx_s": 0.035809939028695226
+        }
+      ]
+    },
+    {
+      "member": 15,
+      "arm": "G",
+      "sha256": "e160167c7846f365fd740fe9f471946a6b27180e1819395756becf02ec523710",
+      "bytes": 763935,
+      "max_abs_error": 7.152557373046875e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.016713363002054393,
+          "onnx_s": 0.0030883949948474765
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.0149740080232732,
+          "onnx_s": 0.004542055015917867
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.046807233011350036,
+          "onnx_s": 0.036584840971045196
+        }
+      ]
+    },
+    {
+      "member": 16,
+      "arm": "G",
+      "sha256": "f4c1cb71c4482b0c63f93aa94f03cf8fd235023c807dddcd7edd0632c1f83b34",
+      "bytes": 763935,
+      "max_abs_error": 2.384185791015625e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.016540374024771154,
+          "onnx_s": 0.003085270000156015
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.014676680963020772,
+          "onnx_s": 0.0043581140344031155
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.04519478598376736,
+          "onnx_s": 0.034841888991650194
+        }
+      ]
+    },
+    {
+      "member": 17,
+      "arm": "G",
+      "sha256": "28441bc2c984f24fc9dede6bde9bc6f11c2bd6e20187f502d0723d8e24f15e1c",
+      "bytes": 763935,
+      "max_abs_error": 5.245208740234375e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.016483781975694,
+          "onnx_s": 0.0030553960241377354
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.014731617993675172,
+          "onnx_s": 0.004437883966602385
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.04588967398740351,
+          "onnx_s": 0.035586318001151085
+        }
+      ]
+    },
+    {
+      "member": 18,
+      "arm": "E",
+      "sha256": "344436f3eccc5dc451c0e6bdfedfc2e1b9934f3952223ea062d176ed2d6bd63f",
+      "bytes": 585703,
+      "max_abs_error": 4.76837158203125e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.001348396996036172,
+          "onnx_s": 0.001377464970573783
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.0023217310081236064,
+          "onnx_s": 0.002511556027457118
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.01810100401053205,
+          "onnx_s": 0.015503072994761169
+        }
+      ]
+    },
+    {
+      "member": 19,
+      "arm": "G",
+      "sha256": "fdd70418c1c0b255014bca3a1a172e18c092c3a6f308849ea469bbf7531c7270",
+      "bytes": 763935,
+      "max_abs_error": 4.291534423828125e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.017027295019943267,
+          "onnx_s": 0.003091182035859674
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.015002934029325843,
+          "onnx_s": 0.00443397497292608
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.045531284995377064,
+          "onnx_s": 0.036416666000150144
+        }
+      ]
+    },
+    {
+      "member": 20,
+      "arm": "E",
+      "sha256": "d08f69cc0ccc6fa65c80653d1309dccf22dedc9c66b09bcfbcd67984f2681a35",
+      "bytes": 585703,
+      "max_abs_error": 5.7220458984375e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.0013287320034578443,
+          "onnx_s": 0.001372278027702123
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.002307926013600081,
+          "onnx_s": 0.0025285339797846973
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.018402456014882773,
+          "onnx_s": 0.015598569007124752
+        }
+      ]
+    },
+    {
+      "member": 21,
+      "arm": "G",
+      "sha256": "cfe1b3bba38c1f3f8ac7b453d0aaea482508d6db16997487d256881cc2e5f46a",
+      "bytes": 763935,
+      "max_abs_error": 4.351139068603516e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.016729424998629838,
+          "onnx_s": 0.003133875026833266
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.014860079973004758,
+          "onnx_s": 0.00469561800127849
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.045977562956977636,
+          "onnx_s": 0.036875101970508695
+        }
+      ]
+    },
+    {
+      "member": 22,
+      "arm": "E",
+      "sha256": "3f1e0da579c129ca6f600664e4dfe7b566544aa88011a217d5ba0d25c025f756",
+      "bytes": 585703,
+      "max_abs_error": 3.337860107421875e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.001385923009365797,
+          "onnx_s": 0.0013729899656027555
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.002310655952896923,
+          "onnx_s": 0.002518925000913441
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.018523039994761348,
+          "onnx_s": 0.01561651995871216
+        }
+      ]
+    },
+    {
+      "member": 23,
+      "arm": "G",
+      "sha256": "8a8548431065952de17f008344aec4e8b3e449c2a96ef7da2fa07074e8723ef8",
+      "bytes": 763935,
+      "max_abs_error": 3.814697265625e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.01678170496597886,
+          "onnx_s": 0.003096772008575499
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.014863800024613738,
+          "onnx_s": 0.004562295973300934
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.04609424096997827,
+          "onnx_s": 0.037221239996142685
+        }
+      ]
+    },
+    {
+      "member": 24,
+      "arm": "E",
+      "sha256": "f0be819993d4e29ed71d66e69ed5bf41c55ab20647c0a747c7c80708000a1487",
+      "bytes": 585703,
+      "max_abs_error": 1.1444091796875e-05,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.001447951013687998,
+          "onnx_s": 0.001408783020451665
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.0024202560307458043,
+          "onnx_s": 0.0025965499808080494
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.018707709037698805,
+          "onnx_s": 0.015906633983831853
+        }
+      ]
+    },
+    {
+      "member": 25,
+      "arm": "G",
+      "sha256": "4a5a10f7d6ea061c1354ee5bd39464267dbdf46cb5946b449fb9ea0b79f60a43",
+      "bytes": 763935,
+      "max_abs_error": 3.337860107421875e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.017153216002043337,
+          "onnx_s": 0.00312095700064674
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.015120194002520293,
+          "onnx_s": 0.004480228002648801
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.04699823498958722,
+          "onnx_s": 0.03608187200734392
+        }
+      ]
+    },
+    {
+      "member": 26,
+      "arm": "E",
+      "sha256": "4e347afa8a2eeb9492554059355be7628856278226171175ff805d4788e04a86",
+      "bytes": 585703,
+      "max_abs_error": 4.76837158203125e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.0013627589796669781,
+          "onnx_s": 0.0013529399875551462
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.0023228219943121076,
+          "onnx_s": 0.00254793802741915
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.018472278025001287,
+          "onnx_s": 0.015588319976814091
+        }
+      ]
+    },
+    {
+      "member": 27,
+      "arm": "G",
+      "sha256": "e57ce2e9b4f493d296033d8897dcdd5fc4bacc59c37db2565000d9be6867cf4b",
+      "bytes": 763935,
+      "max_abs_error": 3.814697265625e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.016732410993427038,
+          "onnx_s": 0.0030977929709479213
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.014867186022456735,
+          "onnx_s": 0.004457100993022323
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.04583611199632287,
+          "onnx_s": 0.03550847596488893
+        }
+      ]
+    },
+    {
+      "member": 28,
+      "arm": "E",
+      "sha256": "b19a1e1d5c5b27a6abecaa8f0b5426ab7d1d3c94dfbfc11e1e0f50e771100579",
+      "bytes": 585703,
+      "max_abs_error": 9.5367431640625e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.0013604210107587278,
+          "onnx_s": 0.0013743240269832313
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.002344414999242872,
+          "onnx_s": 0.0025092659634537995
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.018734548008069396,
+          "onnx_s": 0.015574057004414499
+        }
+      ]
+    },
+    {
+      "member": 29,
+      "arm": "G",
+      "sha256": "88a44518b575a429306d5443a0dac55e23d159f0ebb624050b8d7f03fb64ef92",
+      "bytes": 763935,
+      "max_abs_error": 3.337860107421875e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.01668787800008431,
+          "onnx_s": 0.0030295539763756096
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.014914785977452993,
+          "onnx_s": 0.004421123012434691
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.04559731000335887,
+          "onnx_s": 0.03556357102934271
+        }
+      ]
+    },
+    {
+      "member": 30,
+      "arm": "E",
+      "sha256": "5b8ac2b8f4aa6de194ee3b9677a66204a0463b5b3dfcad84017a18debb09a7ce",
+      "bytes": 585703,
+      "max_abs_error": 5.7220458984375e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.0013550279545597732,
+          "onnx_s": 0.0013733130181208253
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.0023028189898468554,
+          "onnx_s": 0.002527591015677899
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.01860399398719892,
+          "onnx_s": 0.015634793031495064
+        }
+      ]
+    },
+    {
+      "member": 31,
+      "arm": "G",
+      "sha256": "9237740174709847f65f977b1ae302793b3b73d3bebacad3913857003a6fa5d7",
+      "bytes": 763935,
+      "max_abs_error": 3.814697265625e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.01660591596737504,
+          "onnx_s": 0.003099424997344613
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.014935882005374879,
+          "onnx_s": 0.00454653799533844
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.04590125597314909,
+          "onnx_s": 0.03630696999607608
+        }
+      ]
+    },
+    {
+      "member": 32,
+      "arm": "E",
+      "sha256": "bc9528b75529ff4bfd60757ed3ee71c34cb4d40b6f6cecf517b3d2cef924b666",
+      "bytes": 585703,
+      "max_abs_error": 2.86102294921875e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.0013649900211021304,
+          "onnx_s": 0.0013640399556607008
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.0022987849661149085,
+          "onnx_s": 0.002517985994927585
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.018526564992498606,
+          "onnx_s": 0.01563707197783515
+        }
+      ]
+    },
+    {
+      "member": 33,
+      "arm": "G",
+      "sha256": "036f98cf9dc2586aaf38d194789f29db0c681831c120218ad6315884b61dc220",
+      "bytes": 763935,
+      "max_abs_error": 4.0531158447265625e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.016853696026373655,
+          "onnx_s": 0.00312594702700153
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.014735716977156699,
+          "onnx_s": 0.0044962490210309625
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.04555509699275717,
+          "onnx_s": 0.036534451006446034
+        }
+      ]
+    },
+    {
+      "member": 34,
+      "arm": "E",
+      "sha256": "64f2bb1b6dcc9795983b08c3412bd4a61032bc7959d953f176cabaad148dfcfe",
+      "bytes": 585703,
+      "max_abs_error": 9.5367431640625e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.0013816340360790491,
+          "onnx_s": 0.0013670119806192815
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.0023228839854709804,
+          "onnx_s": 0.0025129360146820545
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.018526358006056398,
+          "onnx_s": 0.015608159999828786
+        }
+      ]
+    },
+    {
+      "member": 35,
+      "arm": "G",
+      "sha256": "eff0371f49795b90846c700ddf612a8462881d837a8dc79d07b5b9dc3905d22b",
+      "bytes": 763935,
+      "max_abs_error": 4.0531158447265625e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.016605300013907254,
+          "onnx_s": 0.0031170370057225227
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.014945164963137358,
+          "onnx_s": 0.00463923899224028
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.04619873798219487,
+          "onnx_s": 0.036617668985854834
+        }
+      ]
+    },
+    {
+      "member": 36,
+      "arm": "E",
+      "sha256": "a2c0ce8d14abb43ddb123d3056b184bc4b13e816b5b1d22defb21be6ec7cb977",
+      "bytes": 585703,
+      "max_abs_error": 5.7220458984375e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.0013466589734889567,
+          "onnx_s": 0.001354161009658128
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.0023163469741120934,
+          "onnx_s": 0.0025138420169241726
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.018538914970122278,
+          "onnx_s": 0.01568400301039219
+        }
+      ]
+    },
+    {
+      "member": 37,
+      "arm": "G",
+      "sha256": "ac969df338bcba349292967bafcd1d6232b9e557dcfa7049747a7cc1d797e263",
+      "bytes": 763935,
+      "max_abs_error": 3.337860107421875e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.016719875973649323,
+          "onnx_s": 0.0030415859655477107
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.014792173984460533,
+          "onnx_s": 0.004373000003397465
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.04513275797944516,
+          "onnx_s": 0.03550024802098051
+        }
+      ]
+    },
+    {
+      "member": 38,
+      "arm": "E",
+      "sha256": "d9a5988825b9f3e7d35e05d81949d6ff4af5bf8e487692b30a01f03bd334d9e2",
+      "bytes": 585703,
+      "max_abs_error": 4.76837158203125e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.001387889962643385,
+          "onnx_s": 0.0013679020339623094
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.0023240020382218063,
+          "onnx_s": 0.002523983013816178
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.018578548973891884,
+          "onnx_s": 0.015705664991401136
+        }
+      ]
+    },
+    {
+      "member": 39,
+      "arm": "G",
+      "sha256": "ac3f38d2a563d9ead18450d36a0bbb1bfcdc58ac5e1f40e9fcdb31f2bb925942",
+      "bytes": 763935,
+      "max_abs_error": 4.291534423828125e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.016513540991581976,
+          "onnx_s": 0.003038030001334846
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.01493327203206718,
+          "onnx_s": 0.00445129896979779
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.04543102701427415,
+          "onnx_s": 0.035807494015898556
+        }
+      ]
+    },
+    {
+      "member": 40,
+      "arm": "E",
+      "sha256": "9032f1b60c8eb7fedd76d0b966325bfdf27983cb9d9cdd467b2aa2979b8c2d92",
+      "bytes": 585703,
+      "max_abs_error": 3.814697265625e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.0013557540369220078,
+          "onnx_s": 0.0013562749954871833
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.002308464958332479,
+          "onnx_s": 0.0025465760263614357
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.0184561790083535,
+          "onnx_s": 0.015528765972703695
+        }
+      ]
+    },
+    {
+      "member": 41,
+      "arm": "G",
+      "sha256": "a4ce68a3595b202081139955e2f32ad7f0bf971937f2e4a52947cb6811196912",
+      "bytes": 763935,
+      "max_abs_error": 3.814697265625e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.01680898800259456,
+          "onnx_s": 0.0030452539795078337
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.014809055021032691,
+          "onnx_s": 0.004389933950733393
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.046337792999111116,
+          "onnx_s": 0.03606407600454986
+        }
+      ]
+    },
+    {
+      "member": 42,
+      "arm": "E",
+      "sha256": "015c7fc2288f16e0e607ef54aa20f48b2a9da6a4a8b3bf1d86c7d60570e18635",
+      "bytes": 585703,
+      "max_abs_error": 5.7220458984375e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.0013571690069511533,
+          "onnx_s": 0.0013633089838549495
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.002337822050321847,
+          "onnx_s": 0.0024969810037873685
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.018563930003438145,
+          "onnx_s": 0.01569443504558876
+        }
+      ]
+    },
+    {
+      "member": 43,
+      "arm": "G",
+      "sha256": "0d5aa42483d0b869f66c5aa00b243e678ae8504c07fcd37906851487addfff1b",
+      "bytes": 763935,
+      "max_abs_error": 4.0531158447265625e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.016703022993169725,
+          "onnx_s": 0.0030980120063759387
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.014762090984731913,
+          "onnx_s": 0.004408097011037171
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.045869851019233465,
+          "onnx_s": 0.03568929497851059
+        }
+      ]
+    },
+    {
+      "member": 44,
+      "arm": "E",
+      "sha256": "06903e90583c42c9c7a8b0d8a8ea0a4df71a9b5b777b145149bb7cf8ac8a987f",
+      "bytes": 585703,
+      "max_abs_error": 6.67572021484375e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.0013744340394623578,
+          "onnx_s": 0.0013516510371118784
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.00229024700820446,
+          "onnx_s": 0.0026014280156232417
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.018499873986002058,
+          "onnx_s": 0.01559235097374767
+        }
+      ]
+    },
+    {
+      "member": 45,
+      "arm": "G",
+      "sha256": "f952e8b1d760520e46d08f573587a178627cb5782dd376dead8618e1eec7df76",
+      "bytes": 763935,
+      "max_abs_error": 4.76837158203125e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.016720284998882562,
+          "onnx_s": 0.0030765809933654964
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.01493076398037374,
+          "onnx_s": 0.00446891802130267
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.04611247300636023,
+          "onnx_s": 0.036152952001430094
+        }
+      ]
+    },
+    {
+      "member": 46,
+      "arm": "E",
+      "sha256": "f9ec61927d0599f98e3dcb24ac79161f753e2d9918c8fa31a6d7c9e9b338b283",
+      "bytes": 585703,
+      "max_abs_error": 3.337860107421875e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.0013659190153703094,
+          "onnx_s": 0.0013722499716095626
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.0023016739869490266,
+          "onnx_s": 0.0024925339967012405
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.01850276900222525,
+          "onnx_s": 0.015617759025190026
+        }
+      ]
+    },
+    {
+      "member": 47,
+      "arm": "G",
+      "sha256": "aff50182792b61ef68d8f19016205609c834f5d2a8e34065e98376939e983197",
+      "bytes": 763935,
+      "max_abs_error": 3.814697265625e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.01659878803184256,
+          "onnx_s": 0.003063800046220422
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.014788239961490035,
+          "onnx_s": 0.004441611003130674
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.04596565995598212,
+          "onnx_s": 0.03570853197015822
+        }
+      ]
+    },
+    {
+      "member": 48,
+      "arm": "E",
+      "sha256": "89c07795290fb748d77d517ed5b83739bf61858964cd52e6ddebf6ea7fa02d04",
+      "bytes": 585703,
+      "max_abs_error": 5.7220458984375e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.0013317550183273852,
+          "onnx_s": 0.0013584590051323175
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.0023381279897876084,
+          "onnx_s": 0.0025136200129054487
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.01860419800505042,
+          "onnx_s": 0.015684606973081827
+        }
+      ]
+    },
+    {
+      "member": 49,
+      "arm": "G",
+      "sha256": "b8046ab61c15f0f3cd56658ee7e0e5d2e185aecc79b7522d8fbb29cd71631a3c",
+      "bytes": 763935,
+      "max_abs_error": 3.337860107421875e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.016540667973458767,
+          "onnx_s": 0.003003442019689828
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.01491160603472963,
+          "onnx_s": 0.004465155012439936
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.04591673397226259,
+          "onnx_s": 0.03529934800462797
+        }
+      ]
+    },
+    {
+      "member": 50,
+      "arm": "E",
+      "sha256": "28f8b87da280319950dc10f1f30a802561234c85b0d132feb0f6b9a47c2f734f",
+      "bytes": 585703,
+      "max_abs_error": 4.76837158203125e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.0013445629738271236,
+          "onnx_s": 0.0013799400185234845
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.0023093540221452713,
+          "onnx_s": 0.0025510789710097015
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.018513959017582238,
+          "onnx_s": 0.015668834967073053
+        }
+      ]
+    },
+    {
+      "member": 51,
+      "arm": "G",
+      "sha256": "1ccbefc22890b661660da529d894ec1f5006a027e8e093c2c287f423d81015d6",
+      "bytes": 763935,
+      "max_abs_error": 3.6656856536865234e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.016820675984490663,
+          "onnx_s": 0.0030393929919227958
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.014776747964788228,
+          "onnx_s": 0.0043902400066144764
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.04583209898555651,
+          "onnx_s": 0.0353812369867228
+        }
+      ]
+    },
+    {
+      "member": 52,
+      "arm": "E",
+      "sha256": "81840f66d3a35a6c83f411f169fa8b2dff2ac9c5582158d1b2e8fdee0490adc2",
+      "bytes": 585703,
+      "max_abs_error": 7.62939453125e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.0013643709826283157,
+          "onnx_s": 0.0013695170055143535
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.0023155870148912072,
+          "onnx_s": 0.002508928009774536
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.018301750998944044,
+          "onnx_s": 0.015749189944472164
+        }
+      ]
+    },
+    {
+      "member": 53,
+      "arm": "G",
+      "sha256": "b7a66fcbfe8589ed20eb83b2b7f58144237a053d5bf432d8f46b0c220278fb06",
+      "bytes": 763935,
+      "max_abs_error": 3.337860107421875e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.016707533970475197,
+          "onnx_s": 0.0030892319628037512
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.014851760992314667,
+          "onnx_s": 0.004559786000754684
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.046560778049752116,
+          "onnx_s": 0.03735286003211513
+        }
+      ]
+    },
+    {
+      "member": 54,
+      "arm": "E",
+      "sha256": "c479e3cd6052c74e0ea9454fc9748a3a68b8e6f2fff0321d2664a917056ba6f5",
+      "bytes": 585703,
+      "max_abs_error": 7.62939453125e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.001353908039163798,
+          "onnx_s": 0.001389398006722331
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.00229241099441424,
+          "onnx_s": 0.002515119034796953
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.018530539993662387,
+          "onnx_s": 0.01571946602780372
+        }
+      ]
+    },
+    {
+      "member": 55,
+      "arm": "G",
+      "sha256": "bd8805ab6e8f4ebaf411037c6d5892a70e4eacb2f203397daf93573e80d22cba",
+      "bytes": 763935,
+      "max_abs_error": 3.345310688018799e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.01685612101573497,
+          "onnx_s": 0.003118001972325146
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.014947486983146518,
+          "onnx_s": 0.004476704052649438
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.04611153696896508,
+          "onnx_s": 0.03658210497815162
+        }
+      ]
+    },
+    {
+      "member": 56,
+      "arm": "E",
+      "sha256": "be9f813e35dcfde161246a6578f52b75ed243f5aa53da62a4890e152f0103dc8",
+      "bytes": 585703,
+      "max_abs_error": 4.76837158203125e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.0013562800013460219,
+          "onnx_s": 0.0013802499743178487
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.0023472339962609112,
+          "onnx_s": 0.0025365829933434725
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.018251880013849586,
+          "onnx_s": 0.015629901958163828
+        }
+      ]
+    },
+    {
+      "member": 57,
+      "arm": "G",
+      "sha256": "a17b486049d5a0022ad3bf46183ba103430857f3a7f50eb0f29b1a7a60fbabcc",
+      "bytes": 763935,
+      "max_abs_error": 3.814697265625e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.016732914024032652,
+          "onnx_s": 0.003102147951722145
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.014788741013035178,
+          "onnx_s": 0.00435801298590377
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.04582432203460485,
+          "onnx_s": 0.03574652405222878
+        }
+      ]
+    },
+    {
+      "member": 58,
+      "arm": "E",
+      "sha256": "9835e27cc55da74a1f28e6825f13bdf381bc16446b6fc42ccb33a07659dc9864",
+      "bytes": 585703,
+      "max_abs_error": 4.76837158203125e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.0013396479771472514,
+          "onnx_s": 0.001385056006256491
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.002315410994924605,
+          "onnx_s": 0.002504478965420276
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.01856619998579845,
+          "onnx_s": 0.01573191100033
+        }
+      ]
+    },
+    {
+      "member": 59,
+      "arm": "G",
+      "sha256": "f58fc2663430909d9d8ef21a5093f37b8e27cb27af8e62c05b4228c82f499036",
+      "bytes": 763935,
+      "max_abs_error": 4.887580871582031e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.01664724899455905,
+          "onnx_s": 0.0031669349991716444
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.01473656203597784,
+          "onnx_s": 0.004504185984842479
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.0459640990011394,
+          "onnx_s": 0.03584968904033303
+        }
+      ]
+    },
+    {
+      "member": 60,
+      "arm": "E",
+      "sha256": "c11fab373e7dcf133fb1f81df3fda2ff299061578e88fd4488c4598d294c18a7",
+      "bytes": 585703,
+      "max_abs_error": 6.67572021484375e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.0013571750023402274,
+          "onnx_s": 0.0013639199896715581
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.002305398986209184,
+          "onnx_s": 0.002550450968556106
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.018468034977559,
+          "onnx_s": 0.015684878977481276
+        }
+      ]
+    },
+    {
+      "member": 61,
+      "arm": "G",
+      "sha256": "c6f01cdb33140b235795b16e0ce746157cc8f3fafba791dbcb48f3ecbe9d7110",
+      "bytes": 763935,
+      "max_abs_error": 5.066394805908203e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.017011506017297506,
+          "onnx_s": 0.003032859996892512
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.014820404991041869,
+          "onnx_s": 0.004448508028872311
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.04725045501254499,
+          "onnx_s": 0.03580731200054288
+        }
+      ]
+    },
+    {
+      "member": 62,
+      "arm": "E",
+      "sha256": "582b15b42dd785d7a975f7472df4827fb5e135074d5c151e6171e4ae7d15d31a",
+      "bytes": 585703,
+      "max_abs_error": 3.814697265625e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.0013758949935436249,
+          "onnx_s": 0.0013828809605911374
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.0023108809837140143,
+          "onnx_s": 0.0025227860314771533
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.018588361039292067,
+          "onnx_s": 0.01567509799497202
+        }
+      ]
+    },
+    {
+      "member": 63,
+      "arm": "G",
+      "sha256": "d5496b15a2e22a10da9ba416381b1b0d54d29d097ed5727c754c200b912063d0",
+      "bytes": 763935,
+      "max_abs_error": 5.9604644775390625e-06,
+      "argmax_mismatch": 0,
+      "timing": [
+        {
+          "batch": 1,
+          "length": 633,
+          "native_s": 0.01671818201430142,
+          "onnx_s": 0.003101288981270045
+        },
+        {
+          "batch": 3,
+          "length": 401,
+          "native_s": 0.014830272004473954,
+          "onnx_s": 0.004455413029063493
+        },
+        {
+          "batch": 16,
+          "length": 636,
+          "native_s": 0.04638998198788613,
+          "onnx_s": 0.03587507194606587
+        }
+      ]
+    }
+  ]
+}

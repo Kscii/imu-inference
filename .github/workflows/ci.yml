@@ -1,0 +1,26 @@
+name: Validate frozen CPU inference wheel
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with: {python-version: "3.12"}
+      - run: pip install uv==0.12.10
+      - run: uv sync --frozen --extra runtime
+      - run: uv run --frozen --extra runtime ruff check .
+      - run: uv run --frozen --extra runtime pytest -q
+      - run: uv build --wheel
+      - run: cd dist && sha256sum *.whl > SHA256SUMS
+      - uses: actions/upload-artifact@v4
+        with:
+          name: imu-inference-wheel-${{ github.sha }}
+          path: dist/
+          retention-days: 30
