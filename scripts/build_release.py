@@ -42,7 +42,8 @@ def main():
             raise ValueError('Wheel rebuilt from source distribution differs')
         with zipfile.ZipFile(wheel) as archive:
             names = archive.namelist()
-            for notice in ('LICENSE', 'THIRD_PARTY_NOTICES.md', 'MODEL_LICENSES.md'):
+            for notice in ('LICENSE', 'THIRD_PARTY_NOTICES.md', 'MODEL_LICENSES.md',
+                           'LICENSES/CC-BY-SA-4.0.txt'):
                 if not any(n.endswith('/licenses/'+notice) for n in names):
                     raise ValueError(f'Missing packaged license file: {notice}')
         report = dict(schema='imu.delivery.build.v2', passed=True, source_commit=commit,

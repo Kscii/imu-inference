@@ -2,7 +2,9 @@
 
 **1.0.1 · Linux x86_64 · Python 3.12 · CPU**
 
-包含 SB1 分块分类、实验 E7 整段分类、GP2 实验计步与统计。权重随 wheel 安装，运行时不下载模型。训练来源、数据规模、指标与限制见 [模型与验证](docs/model.md)。
+包含 SB1 分块分类、E7 整段分类和 GP2 实验计步与统计。**录制结束后分析推荐 E7 整段处理**；需持续输出时使用 SB1 分块处理。当前同一研究参考的 ES1 区间 accuracy 分别为 75.49% / 72.67%，主指标 macro recall 为 74.09% / 67.72%；改善有适用范围，详见[模型与验证](docs/model.md)。权重随 wheel 安装，运行时不下载模型。
+
+文档修订日期：2026-10-24。只更新解释与建议，发布的 v1.0.1 wheel、标签、模型和接口行为保持冻结。模式描述仍保留 `whole_record.experimental=true`，不因文档推荐而自动改变该字段。
 
 ## 安装与使用
 
@@ -38,6 +40,8 @@ events += stream.finish()
 输入加速度单位 m/s² 且保留重力，角速度 rad/s，25 Hz。valid=false 标记缺失，excluded=true 标记排除，保留时间位置。输出事件范围为整数采样位置 `[start,end)`；classification 与 steps 有独立进度，结束用 finish 完成尾段。
 
 whole_record 用 PipelineConfig(mode="whole_record") 和完整 predict 输入，最长 25 小时，不支持流式拼接等价。纵向符号适配默认关闭。无法分析的计步保持 null，不等于零步。模型置信分数不是经过客户校准的正确概率。
+
+当前四类标签合并走路和跑步，未接入独立走跑二分类。可按需另行提供研究候选；公司设备跑步样本不足且现有验证未通过，不作为即用功能，见[走跑候选及验证](docs/walk-run.md)。
 
 ## 交付与更新
 

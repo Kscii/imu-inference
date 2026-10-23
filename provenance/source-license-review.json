@@ -1,12 +1,12 @@
 {
   "schema": "imu.source-license-review.v1",
   "review_date": "2026-10-23",
-  "scope": "Frozen 1.0.1 candidate; source evidence review, not legal advice or third-party endorsement",
+  "scope": "Release 1.0.1; owner-approved component licensing with preserved source evidence and historical admission",
   "owned_code_copyright": "Kscii",
   "owned_code_license": "MIT",
   "raw_datasets_redistributed": false,
-  "public_release_allowed": false,
-  "decision_status": "awaiting_owner_choice_for_forth_trained_weights",
+  "public_release_allowed": true,
+  "decision_status": "owner_approved_component_licenses",
   "affected_weights": [
     "src/imu_inference/assets/e7/r15.ubj",
     "src/imu_inference/assets/e7/head.ubj",
@@ -20,7 +20,6 @@
   },
   "current_author_record": "CC-BY-SA-4.0; permits commercial use subject to its applicable conditions",
   "legal_derivative_work_determination": null,
-  "proposed_conservative_arrangement": "CC-BY-SA-4.0 for R15/E1/E5 weights; own remaining code and weights MIT; preserve third-party terms",
   "review": [
     {
       "id": "forth-zenodo",
@@ -59,5 +58,38 @@
       "bytes": 1076,
       "observed_license": "MIT"
     }
-  ]
+  ],
+  "release_arrangement": "CC-BY-SA-4.0 for R15/E1/E5 weights; other licensable own code, documentation and weights MIT; third-party terms preserved",
+  "owner_decision": {
+    "date": "2026-10-23",
+    "approved": true,
+    "instruction": "接受使用CC BY-SA 4.0",
+    "scope": "R15, E1 and E5 trained weights only; remaining agreed delivery scope unchanged",
+    "retroactive_relicensing_of_old_artifacts": false
+  },
+  "weight_licenses": [
+    {
+      "model": "R15",
+      "path": "src/imu_inference/assets/e7/r15.ubj",
+      "sha256": "b8d8a183f3f2b960771b540e1437fde6a8438f1ececb50ac00fb73a63c294201",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "model": "E1",
+      "path": "src/imu_inference/assets/e7/head.ubj",
+      "sha256": "b9596e53ce786ee1f9630ce23af461e66524abd26095cc5c385756c4b598ab95",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "model": "E5",
+      "path": "src/imu_inference/assets/e7/event.ubj",
+      "sha256": "af66d3f248e16caf49bad472bd05cc1df5348005564d96cb917011bc232ffd3f",
+      "license": "CC-BY-SA-4.0"
+    }
+  ],
+  "license_text": {
+    "path": "LICENSES/CC-BY-SA-4.0.txt",
+    "source": "https://creativecommons.org/licenses/by-sa/4.0/legalcode.txt",
+    "sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5"
+  }
 }
