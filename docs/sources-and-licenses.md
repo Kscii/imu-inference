@@ -38,6 +38,6 @@
 
 本次重新读取作者 [Zenodo API](https://zenodo.org/api/records/841301)，得到 `license.id=cc-by-sa-4.0`。作者 GitHub README 的 LICENCE 段要求引用论文，未在该段另列非商业限制。**CC BY-SA 4.0 允许商用，但要求对受其约束的改编材料保留相同许可及署名**；不能把它写成 CC BY-NC，也不能仅凭允许商用就将其改成 MIT。[许可说明](https://creativecommons.org/licenses/by-sa/4.0/)
 
-R15、E1、E5 都在训练来源清单中使用 FORTH；因此授权核对覆盖三个权重，不能只处理名称上带 research_only 的 R15。关于训练权重是否构成该数据的法律衍生作品，本文不作确定判断。候选包的具体发布授权仍以 MODEL_LICENSES.md 及发布核对记录为准。
+R15、E1、E5 都在训练来源清单中使用 FORTH；因此授权核对覆盖三个权重，不能只处理名称上带 research_only 的 R15。2026-10-23，权利人确认主动对这三个权重采用 CC BY-SA 4.0，其余可授权自有材料采用 MIT，保留第三方条款。这是本次发布的明确许可安排，不是认定所有利用该数据训练的权重都依法构成衍生作品。具体文件、摘要、署名和范围见 MODEL_LICENSES.md；当前发布决定在新的核对记录中保存，不回写旧研究准入标记。
 
 本说明是来源证据及交付范围记录，不替代作者授权，也不代表来源作者认可本产品。日期、地址和响应摘要见 [来源核对记录](../provenance/source-license-review.json)。
