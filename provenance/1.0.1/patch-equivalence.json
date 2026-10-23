@@ -1,0 +1,42 @@
+{
+  "schema": "imu.patch-equivalence.v1",
+  "passed": true,
+  "baseline_version": "1.0.0",
+  "candidate_version": "1.0.1",
+  "baseline_wheel_sha256": "2c00e09d00d09b0482dfb1ba34a6491b6f9905226288ab0f7aecb9c3dde72d60",
+  "checked_files": 197,
+  "candidate_inventory_sha256": "0bf705d33697815a40c64296ec4463eb994640528c13787944d035a3c8288c4e",
+  "permitted_source_change": "__init__.py version literal only",
+  "excluded_output_fields": [
+    "provenance.library_version",
+    "provenance.code_sha256"
+  ],
+  "input": "180-second synthetic mixed signal with explicit invalid and excluded masks",
+  "accuracy_evidence": false,
+  "cases": {
+    "incremental.sign_0.steps_0": {
+      "equal": true,
+      "output_sha256": "05ab72a4438c101aa131ccf5fe19128b881c620333bf281761c949fb31bc8e88"
+    },
+    "incremental.sign_0.steps_1": {
+      "equal": true,
+      "output_sha256": "8bcd86516c4629a6b487283a41334161006994130dc27641298d7a658223349c"
+    },
+    "whole_record.sign_0.steps_0": {
+      "equal": true,
+      "output_sha256": "fb5e044fa0fa064368186f6006406ac0e15f1b3fcf358b2127d7502aa0e824af"
+    },
+    "whole_record.sign_0.steps_1": {
+      "equal": true,
+      "output_sha256": "b60426d95a7131d3af6e4d01d6a972bfa2427f3be8540082ed0a2031f38696df"
+    },
+    "whole_record.sign_1.steps_0": {
+      "equal": true,
+      "output_sha256": "cc27feeb19c4e093886bc504151843a1da8d671060b49bd9ccaeeee616fb214a"
+    },
+    "whole_record.sign_1.steps_1": {
+      "equal": true,
+      "output_sha256": "b61c4cf8ea0818c47d0bbd3c51208a34ab45067857d617685266366ec7c146f0"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 """Public API; importing contracts does not load torch or model weights."""
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 from .contracts import InputBatch, PipelineConfig, capabilities
 

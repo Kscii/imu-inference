@@ -1,6 +1,6 @@
 # IMU 推理库
 
-**1.0.0 · Linux x86_64 · Python 3.12 · CPU**
+**1.0.1 · Linux x86_64 · Python 3.12 · CPU**
 
 包含 SB1 分块分类、实验 E7 整段分类、GP2 实验计步与统计。权重随 wheel 安装，运行时不下载模型。训练来源、数据规模、指标与限制见 [模型与验证](docs/model.md)。
 
@@ -43,6 +43,8 @@ whole_record 用 PipelineConfig(mode="whole_record") 和完整 predict 输入，
 
 src/ 包含实际模型、算法、第三方实现及声明；tests/ 是自动测试；scripts/ 是研究复算与性能工具；provenance/ 保存来源与证据。源码来源见 [清单](provenance/delivery-origin.json)。
 
-本版本固定权重推理可复现，不包含完整训练工程或原始数据。发布通过私有 Release，部署禁止原地改权重；更新形成新 wheel、摘要、回归记录和固定版本，由服务仓库显式接入。
+本版本固定权重推理可复现，不包含完整训练工程或原始数据。发布通过 GitHub Release，部署禁止原地改权重；更新形成新 wheel、摘要、回归记录和固定版本，由服务仓库显式接入。
 
-本次验证：[27 项库测试](provenance/delivery-library-tests.xml)、[源码与 sdist 重建摘要](provenance/delivery-build.json)。两条构建路径均重建出与冻结 wheel 字节一致的文件。
+1.0.0 的历史构建与测试记录保持原样。1.0.1 的模型等价证据见 [版本回归](provenance/1.0.1/patch-equivalence.json)，新制品构建与完整测试记录随对应 Release 提供。
+
+自有代码署名 Kscii，采用 [MIT](LICENSE)；模型授权范围单列于 [MODEL_LICENSES.md](MODEL_LICENSES.md)，第三方条款见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。数据规模、官方入口及许可核对见 [来源说明](docs/sources-and-licenses.md)。

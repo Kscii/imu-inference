@@ -1,0 +1,63 @@
+{
+  "schema": "imu.source-license-review.v1",
+  "review_date": "2026-10-23",
+  "scope": "Frozen 1.0.1 candidate; source evidence review, not legal advice or third-party endorsement",
+  "owned_code_copyright": "Kscii",
+  "owned_code_license": "MIT",
+  "raw_datasets_redistributed": false,
+  "public_release_allowed": false,
+  "decision_status": "awaiting_owner_choice_for_forth_trained_weights",
+  "affected_weights": [
+    "src/imu_inference/assets/e7/r15.ubj",
+    "src/imu_inference/assets/e7/head.ubj",
+    "src/imu_inference/assets/e7/event.ubj"
+  ],
+  "historical_admission": {
+    "research_only": true,
+    "commercial_weight_release_allowed": false,
+    "relative_evidence": "full-absorption-af1-v1/sources/forth-spans-fs1-v1/protocol.json",
+    "preserved": true
+  },
+  "current_author_record": "CC-BY-SA-4.0; permits commercial use subject to its applicable conditions",
+  "legal_derivative_work_determination": null,
+  "proposed_conservative_arrangement": "CC-BY-SA-4.0 for R15/E1/E5 weights; own remaining code and weights MIT; preserve third-party terms",
+  "review": [
+    {
+      "id": "forth-zenodo",
+      "url": "https://zenodo.org/api/records/841301",
+      "sha256": "d9da24ef787b4f78b322c3b9d1d632306c1f120d41a8f328611ed94c8b873bdd",
+      "bytes": 6504,
+      "observed_license": "CC-BY-SA-4.0"
+    },
+    {
+      "id": "elderhar-zenodo",
+      "url": "https://zenodo.org/api/records/17191997",
+      "sha256": "f84e0f3ea34afb1951d506ea7cc33cb184a5e509c3ff2751281428d6e829ad7c",
+      "bytes": 26627,
+      "observed_license": "CC-BY-4.0"
+    },
+    {
+      "id": "forth-readme",
+      "url": "https://raw.githubusercontent.com/karayan/FORTH_TRACE_DATASET/master/README.txt",
+      "sha256": "a780bec2e99338804f9a266eba9bafc6f2c4835d321b4158ebbd6e640a2731fd",
+      "bytes": 3103,
+      "observed_terms": "Author README requests citation; does not replace Zenodo license."
+    },
+    {
+      "id": "unipd-osf",
+      "url": "https://api.osf.io/v2/nodes/yj9q4/",
+      "sha256": "02e9b46bc4b59f5c9c124483f84a6db1f65c11d0fa375e28d39e7162e5ee499b",
+      "bytes": 4667,
+      "license_resource": "https://api.osf.io/v2/licenses/563c1cf88c5e4a3877f9e96c/",
+      "author_paper": "https://doi.org/10.3390/data7060079",
+      "author_paper_dataset_license": "CC0-1.0"
+    },
+    {
+      "id": "motionsense-license",
+      "url": "https://raw.githubusercontent.com/mmalekzadeh/motion-sense/master/LICENSE",
+      "sha256": "48035d625af1c7646615541a37438e20127e52214ec832a19aec470d016733a4",
+      "bytes": 1076,
+      "observed_license": "MIT"
+    }
+  ]
+}
